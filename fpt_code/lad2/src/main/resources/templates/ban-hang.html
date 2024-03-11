@@ -1,0 +1,86 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<html>
+<head>
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="container">
+<div class="row">
+  <div class="col-7">
+    <p>Danh sach hoa don</p>
+    <table class="table">
+      <thead>
+      <tr>
+        <td>Id</td>
+        <td>account name</td>
+        <td>create date</td>
+        <td>address</td>
+      </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="col-5">
+    <p>Tao hoa don</p>
+    <form action="#" method="post">
+      <div class="mb-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" name="id" value="#">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" value="#">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Tong tien</label>
+        <input type="text" class="form-control" disabled name="tongTien" value="#">
+      </div>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</div>
+<p>Danh sach hoa don chi tiet</p>
+<table class="table">
+  <thead>
+  <tr>
+    <td>Id</td>
+    <td>account name</td>
+    <td>create date</td>
+    <td>address</td>
+  </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+<p>Danh sach san pham</p>
+<table class="table">
+  <thead>
+  <tr>
+    <td>Id</td>
+    <td>name</td>
+    <td>image</td>
+    <td>available</td>
+    <td>price</td>
+    <td>create date</td>
+    <td>category id</td>
+  </tr>
+  </thead>
+<!--  <tbody>-->
+<!--  <%&#45;&#45;    <c:forEach items="${list}" var="category">&#45;&#45;%>-->
+<!--    <%&#45;&#45;        <tr>&#45;&#45;%>-->
+<!--      <%&#45;&#45;            <td>${category.id}</td>&#45;&#45;%>-->
+<!--      <%&#45;&#45;            <td>${category.name}</td>&#45;&#45;%>-->
+<!--      <%&#45;&#45;            <td><a href="/category/detail/${category.id}" class="btn btn-primary">Chi tiet</a>&#45;&#45;%>-->
+<!--        <%&#45;&#45;                <a href="/category/delete/${category.id}" class="btn btn-primary">Xoa</a></td>&#45;&#45;%>-->
+<!--      <%&#45;&#45;        </tr>&#45;&#45;%>-->
+<!--    <%&#45;&#45;    </c:forEach>&#45;&#45;%>-->
+<!--  </tbody>-->
+
+</table>
+</body>>

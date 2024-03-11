@@ -1,0 +1,8 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/css/demo.css}"/>
+
+<body>
+<p th:text="${theDate}" class="funny"/>
+</body>
+</html>

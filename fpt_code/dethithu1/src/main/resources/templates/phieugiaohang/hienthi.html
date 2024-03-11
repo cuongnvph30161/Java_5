@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu giao hàng</title>
+</head>
+<body class="container">
+
+<form th:action="@{/phieu-giao-hang/add}" th:object="${phieuGiaoHang}" method="post">
+    <h1>HOME</h1>
+    <div class="mb-3">
+        <label class="form-label">Tên người nhận:</label> <i class="text-danger" th:text="${errorNguoiNhan}"></i>
+        <input type="text" th:field="*{nguoiNhan}"   class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tên người giao:</label><i class="text-danger" th:text="${errorNguoiGiao}"></i>
+        <input type="text" th:field="*{nguoiGiao}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ngày giao:</label><i class="text-danger" th:text="${errorNgayGiao}"></i>
+        <input type="date" th:field="*{ngayGiao}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ngày nhận:</label><i class="text-danger" th:text="${errorNgayNhan}"></i>
+        <input type="date" th:field="*{ngayNhan}" class="form-control">
+    </div>
+
+    <div>
+        <label class="form-label">Hoá đơn giao:</label>
+        <select class="form-select" th:field="*{hoaDon.maHoaDon}"  aria-label="Default select example">
+            <option th:each="hd:${listMaHoaDon}" th:value="${hd.maHoaDon}" th:text="${hd.maHoaDon}"></option>
+        </select>
+    </div>
+
+    <div>
+        <label class="form-label">Địa chỉ giao:</label>
+        <select class="form-select"  th:field="*{diaChi.maDiaChi}" aria-label="Default select example">
+            <option th:each="dc:${listMaDiaChi}" th:value="${dc.maDiaChi}" th:text="${dc.maDiaChi}"></option>
+        </select>
+    </div>
+
+
+    <div class="mb-3">
+        <label class="form-label">Phí giao hàng:</label><i class="text-danger" th:text="${errorPhiGiaoHang}"></i>
+        <input type="text" th:field="*{phiGiaoHang}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">sdt nguoi nhan:</label><i class="text-danger" th:text="${errorSdtNguoiNhan}"></i>
+        <input type="text" th:field="*{sdtNguoiNhan}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">sdt nguoi giao:</label><i class="text-danger" th:text="${errorNguoiGiao}"></i>
+        <input type="text" th:field="*{sdtNguoiGiao}" class="form-control">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary" style="margin-left: 550px">Add</button>
+</form>
+
+
+<table class="table mt-4">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Mã phiếu</th>
+        <th scope="col">Người nhận</th>
+        <th scope="col">Sdt Người nhận</th>
+        <th scope="col">Người giao</th>
+        <th scope="col">Sdt Người giao</th>
+        <th scope="col">Ngày giao</th>
+        <th scope="col">Ngày nhận</th>
+        <th scope="col">Địa chỉ</th>
+        <th scope="col">Mã hoá đơn</th>
+        <th scope="col">Trạng thái</th>
+        <th scope="col">Action</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="p,index:${phieuGiaoHangs}">
+        <th scope="row" th:text="${index.count}"></th>
+        <td th:text="${p.maPhieuGiao}"></td>
+        <td th:text="${p.nguoiNhan}"></td>
+        <td th:text="${p.sdtNguoiNhan}"></td>
+        <td th:text="${p.nguoiGiao}"></td>
+        <td th:text="${p.sdtNguoiGiao}"></td>
+        <td th:text="${p.ngayGiao}"></td>
+        <td th:text="${p.ngayNhan}"></td>
+        <td th:text="${p.diaChi.tenDiaChi}"></td>
+        <td th:text="${p.hoaDon.maHoaDon}"></td>
+        <td th:text="${p.trangThai}"></td>
+        <td>
+            <a class="btn btn-danger" onclick="return confirm('Bạn có muốn xoá?')" th:href="@{/phieu-giao-hang/delete(id=${p.maPhieuGiao})}" role="button">Remove</a>
+
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+<nav style="margin-left: 450px" aria-label="Page navigation example" th:if="${totalPage != null}">
+    <ul class="pagination">
+        <li class="page-item">
+            <a th:if="${currentPage>1}" th:href="@{'/phieu-giao-hang/hien-thi?pageNo='+${currentPage-1}}" class="page-link">Previous</a>
+        </li>
+
+        <li class="page-item" th:each="i:${#numbers.sequence(1,totalPage)}" th:classappend="${currentPage==i? 'active':''}">
+            <a class="page-link" th:href="@{'/phieu-giao-hang/hien-thi?pageNo='+${i}}" th:text="${i}"></a>
+        </li>
+
+        <li class="page-item">
+            <a th:if="${currentPage<totalPage}" th:href="@{'/phieu-giao-hang/hien-thi?pageNo='+${currentPage+1}}" class="page-link">Next</a>
+        </li>
+
+    </ul>
+</nav>
+</body>
+</html>

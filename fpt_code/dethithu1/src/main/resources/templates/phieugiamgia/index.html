@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Phieu</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<body class="container">
+<h1 class="text-center">HOME</h1>
+
+<form th:action="@{/search}" method="get">
+    <div class="mb-3">
+        <label class="form-label">From:</label>
+        <input type="number" th:field="*{giaTriGiam}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">To:</label>
+        <input type="number" th:field="*{giaTriGiamToiDa}" class="form-control">
+    </div>
+
+    <div>
+        <label class="form-label">Khách hàng:</label>
+        <select class="form-select" aria-label="Default select example" name="id">
+            <option selected th:each="kh:${listMaKhachHang}" th:value="${kh.maKhachHang}"
+                    th:text="${kh.maKhachHang}"></option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4">Search</button>
+</form>
+
+
+<table class="table mt-4">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Mã</th>
+        <th scope="col">Tên phiếu</th>
+        <th scope="col">Ngày bắt đầu</th>
+        <th scope="col">Ngày kết thúc</th>
+        <th scope="col">Giá trị giảm</th>
+        <th scope="col">Trạng thái</th>
+        <th scope="col">Tên KH</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="p,index :${phieuMaGiams}">
+        <td th:text="${index.count}"></td>
+        <td th:text="${p.maPhieu}"></td>
+        <td th:text="${p.tenPhieu}"></td>
+        <td th:text="${#dates.format(p.ngayBatDau, 'dd/MM/yyyy')}"></td>
+        <td th:text="${#dates.format(p.ngayKetThuc, 'dd/MM/yyyy')}"></td>
+        <td th:text="${p.giaTriGiam}"></td>
+        <td th:text="${p.trangThai==0? 'Kết thúc':'Tiếp tục'}"></td>
+        <td th:text="${p.khachhang.tenKhachHang}"></td>
+
+        <td>
+            <a class="btn btn-danger" onclick="return confirm('You want to delete')"
+               th:href="@{/phieu-giam-gia/delete(id=${p.maPhieu})}">Remove</a>
+            <a class="btn btn-warning" onclick="return confirm('You want to update')"
+               th:href="@{/phieu-giam-gia/update(id=${p.maPhieu})}">Update</a>
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<nav aria-label="Page navigation example" style="margin-left: 450px" th:if="${totalPage != null}">
+    <ul class="pagination">
+        <li class="page-item">
+            <a th:if="${currentPage>1}"
+               th:href="@{'/phieu-giam-gia/hien-thi?pageNo='+${currentPage-1}}" class="page-link">Previous</a>
+        </li>
+
+        <li class="page-item" th:each="i:${#numbers.sequence(1,totalPage)}"
+            th:classappend="${currentPage==i ? 'active':''}">
+            <a class="page-link" th:href="@{'/phieu-giam-gia/hien-thi?pageNo='+${i}}" th:text="${i}"></a>
+        </li>
+
+        <li class="page-item">
+            <a th:if="${currentPage<totalPage}" th:href="@{'/phieu-giam-gia/hien-thi?pageNo='+${currentPage+1}}"
+               class="page-link">Next</a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

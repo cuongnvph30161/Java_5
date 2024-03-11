@@ -1,0 +1,144 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-expand-lg bg-primary mt-4">
+    <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active text-white" th:href="@{/list-account}">Account</a>
+                <a class="nav-link text-white" th:href="@{/hien-thi-product}">Product</a>
+                <a class="nav-link text-white" th:href="@{/list-order}">Order</a>
+                <a class="nav-link text-white" th:href="@{/category/hien-thi}">Category</a>
+            </div>
+        </div>
+        <form class="d-flex mt-2 " role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-white" type="submit">Search</button>
+        </form>
+    </div>
+
+</nav>
+<body class="container">
+<h1 class="text-center">Sell</h1>
+<div class="mt-4">
+    <div class="row">
+        <div class="col-7">
+            <p>List Orders
+            </p>
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>account name</td>
+                    <td>create date</td>
+                    <td>address</td>
+                    <td>action</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="theOrder:${orderList}">
+                    <td th:text="${theOrder.id}"></td>
+                    <td th:text="${theOrder.account.username}"></td>
+                    <!-- Định dạng ngày giờ sang kiểu datetime -->
+                    <td th:text="${theOrder.createDate}"></td>
+                    <td th:text="${theOrder.address}"></td>
+                    <td>
+                        <a class="btn btn-primary" th:href="@{/showListHoaDonDetails(id=${theOrder.id})}">Chọn </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-5">
+            <p>Tao hoa don</p>
+            <form action="#" th:object="${order}" th:action="@{/delete-order}" method="post">
+                <div class="mb-3">
+                    <label class="form-label">Id</label>
+                    <input type="text" th:field="*{id}" class="form-control" disabled>
+                </div>
+                <input type="hidden" th:field="*{id}"/>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" th:field="*{account.username}" class="form-control" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tong tien</label>
+                    <input type="text" th:value="${tongTien}" class="form-control" disabled>
+                </div>
+                <button type="submit" class="btn btn-primary">Pay</button>
+            </form>
+        </div>
+    </div>
+
+    <p>List OrderDetails</p>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>product name</td>
+            <td>price</td>
+            <td>quantily</td>
+            <td>total amount</td>
+            <td>action</td>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="orderDetail:${invoiceIsSelected}">
+
+            <td th:text="${orderDetail.id}"></td>
+            <td th:text="${orderDetail.product.name}"></td>
+            <td th:text="${orderDetail.price}"></td>
+            <td th:text="${orderDetail.quantily}"></td>
+            <td th:text="${orderDetail.price}*${orderDetail.quantily}"></td>
+            <td>
+                <a class="btn btn-primary"
+                   th:href="@{/cancel(id=${orderDetail.id},productId=${orderDetail.product.id})}">Cancel</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>List Product:<i class="text-danger" th:text="${error}"></i> <i class="text-danger" th:text="${errorLoiChon}"></i>
+    </p>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>name</td>
+            <td>image</td>
+            <td>available</td>
+            <td>price</td>
+            <td>create date</td>
+            <td>category name</td>
+            <td>action</td>
+
+        </tr>
+        </thead>
+        <tr th:each="p:${productList}">
+
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.images}"></td>
+            <td th:text="${p.avaliable}"></td>
+            <td th:text="${p.price}"></td>
+            <td th:text="${p.createDate}"></td>
+            <td th:text="${p.category.name}"></td>
+
+            <td>
+                <a class="btn btn-primary" th:href="@{/mua-hang(id=${p.id})}">Mua </a>
+            </td>
+
+
+        </tr>
+
+    </table>
+</div>
+</body>
+

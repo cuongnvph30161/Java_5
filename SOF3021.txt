@@ -1,0 +1,2200 @@
+{
+    "quizzes": [
+        {
+            "ques": "2 dòng lệnh sau sử dụng để ánh xạ đến 2 phương thức action khác nhau\n1. @RequestMapping(value=\"home\", method=RequestMethod.POST)\n2. @RequestMapping(value=\"home\", method=RequestMethod.GET)\nKhi người dùng nhấp vào liên kết có href là \"home.htm\" thì phương thức nào chạy",
+            "ans": "Phương thức get chạy"
+        },
+        {
+            "ques": "2 dòng lệnh sau sử dụng để ánh xạ đến 2 phương thức action khác nhau\n1. @RequestMapping(value=\"home\", method=RequestMethod.POST)\n2. @RequestMapping(value=\"home\", method=RequestMethod.GET)\nKhi người dùng submit form <form action=\"home.htm\" method=\"POST\"> thì phương thức nào chạy",
+            "ans": "Phương thức post chạy"
+        },
+        {
+            "ques": "2 dòng lệnh sau sử dụng để ánh xạ đến 2 phương thức action khác nhau\n1. @RequestMapping(value=\"home\", method=RequestMethod.POST)\n2. @RequestMapping(value=\"home\", method=RequestMethod.GET)\nKhi người dùng submit form <form action=\"home.htm\"> thì phương thức nào chạy",
+            "ans": "Phương thức get chạy"
+        },
+        {
+            "ques": "2 dòng lệnh sau sử dụng để ánh xạ đến 2 phương thức action khác nhau trong controller được ánh xạ là \"home\"\n1. @RequestMapping(): insert()\n2. @RequestMapping(params=\"btnUpdate\"):update()\nKhi người dùng nhấp nút [Update] của form <form action=\"home.htm\"><button>Update</button></form> thì phương thức nào chạy",
+            "ans": "Phương thức insert chạy"
+        },
+        {
+            "ques": "2 dòng lệnh sau sử dụng để ánh xạ đến 2 phương thức action khác nhau trong controller được ánh xạ là \"home\"\n1. @RequestMapping(method=RequestMethod.POST): insert()\n2. @RequestMapping(params=\"btnUpdate\"):update()\nKhi người dùng nhấp nút [Update] của form <form action=\"home.htm\"><button>Update</button></form> thì phương thức nào chạy",
+            "ans": "Không có phương thức nào chạy"
+        },
+        {
+            "ques": "2 dòng lệnh sau sử dụng để ánh xạ đến 2 phương thức action khác nhau trong controller được ánh xạ là \"home\"\n1. @RequestMapping(method=RequestMethod.POST): insert()\n2. @RequestMapping(params=\"lnkEdit\"):update()\nKhi người dùng nhấp liên kết <a href=\"home.htm?lnkEdit\">Insert</a> thì phương thức nào chạy",
+            "ans": "Phương thức update chạy"
+        },
+        {
+            "ques": "2 dòng lệnh sau sử dụng để ánh xạ đến 2 phương thức action khác nhau trong controller được ánh xạ là \"home\"\n1. @RequestMapping(params=\"btnInsert\"): insert()\n2. @RequestMapping(params=\"btnUpdate\"): update()\nKhi người dùng nhấp nút [Update] của form <form action=\"home.htm?btnInsert\"><button>Update</button></form> thì phương thức nào chạy",
+            "ans": "Phương thức insert chạy"
+        },
+        {
+            "ques": "2 dòng lệnh sau sử dụng để ánh xạ đến 2 phương thức action khác nhau trong controller được ánh xạ là \"home\"\n1. @RequestMapping(params=\"btnInsert\"): insert()\n2. @RequestMapping(params=\"btnUpdate\"):update()\nKhi người dùng nhấp nút [Update] của form <form action=\"home.htm\"><button name=\"btnUpdate\">Update</button></form> thì phương thức nào chạy",
+            "ans": "Phương thức update chạy"
+        },
+        {
+            "ques": "<url-pattern>*.htm</url-pattern> trong ánh xạ của DispatcherServlet có ý nghĩa gì?",
+            "ans": "Chỉ tiếp nhận các url kết thúc bởi htm"
+        },
+        {
+            "ques": "@CookieValue có mấy đối số",
+            "ans": "3"
+        },
+        {
+            "ques": "@ModelAttribute được sử dụng để đặt ở đâu để tạo một attribute trong model\n1. Trước đối số action\n2. Trước phương thức có trả về giá trị",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "@NotBlank có thể được sử dụng để kiểm lỗi cho trường có kiểu dữ liệu nào?",
+            "ans": "String"
+        },
+        {
+            "ques": "@NotEmpty có thể được sử dụng để kiểm lỗi cho trường có kiểu dữ liệu nào?",
+            "ans": [
+                "Array",
+                "Collection",
+                "Map",
+                "String"
+            ]
+        },
+        {
+            "ques": "@NotEmpty, @NotBlank, @NotNul có thể được sử dụng để kiểm tra lỗi nào?",
+            "ans": "Đối tượng null"
+        },
+        {
+            "ques": "@NotNull có thể được sử dụng để kiểm lỗi cho trường có kiểu dữ liệu nào?",
+            "ans": [
+                "Double",
+                "Integer",
+                "String"
+            ]
+        },
+        {
+            "ques": "@NotNull có thể được sử dụng để kiểm lỗi cho trường có kiểu dữ liệu nào?",
+            "ans": [
+                "String"
+            ]
+        },
+        {
+            "ques": "@PathVariable có mấy đối số",
+            "ans": "3"
+        },
+        {
+            "ques": "@RequestMapping bao gồm những đối số nào?",
+            "ans": [
+                "method=RequestMethod[]",
+                "params=[]",
+                "value=String[]"
+            ]
+        },
+        {
+            "ques": "@RequestMapping bao gồm những đối số nào?",
+            "ans": [
+                "cookie=[]",
+                "method=RequestMethod[]",
+                "params=[]",
+                "value=String[]"
+            ]
+        },
+        {
+            "ques": "@RequestMapping có thể đặt ở đâu?",
+            "ans": "Cho phép cả Controller và phương thức action"
+        },
+        {
+            "ques": "@RequestParam có mấy đối số",
+            "ans": "3"
+        },
+        {
+            "ques": "Annotation \"@Before\" được dùng bởi framework nào?",
+            "ans": "Junit"
+        },
+        {
+            "ques": "Annotation \"@Parameter\" được dùng bởi framework nào?",
+            "ans": "Junit"
+        },
+        {
+            "ques": "Annotation nào có thể được sử dụng để kiểm tra định dạng email?",
+            "ans": [
+                "@Pattern()"
+            ]
+        },
+        {
+            "ques": "Annotation nào có thể được sử dụng để kiểm tra định dạng email?",
+            "ans": [
+                "@Email()",
+                "@Pattern()"
+            ]
+        },
+        {
+            "ques": "Annotation nào có thể được sử dụng để kiểm tra định dạng email?",
+            "ans": [
+                "@Digits()",
+                "@Email()",
+                "@Future()",
+                "@Pattern()"
+            ]
+        },
+        {
+            "ques": "Annotation nào sau đây được sử dụng khi ánh xạ trường với một cột kiểu thời gian?",
+            "ans": "@Temporal"
+        },
+        {
+            "ques": "Annotation nào sau đây được sử dụng để định dạng trường có kiểu Date?",
+            "ans": "@DateTimeFormat"
+        },
+        {
+            "ques": "Annotation nào được sử dụng để chú thích cho field có kiểu java.util.Date",
+            "ans": "@Temporal"
+        },
+        {
+            "ques": "Annotation nào được sử dụng để nhận một giá trị từ cookie",
+            "ans": "@CookieValue"
+        },
+        {
+            "ques": "Annotation nào được sử dụng để nhận tham số người dùng",
+            "ans": "@RequestParam"
+        },
+        {
+            "ques": "Annotation nào được sử dụng để nhận thông số từ đường dẫn url",
+            "ans": "@PathVariable"
+        },
+        {
+            "ques": "Annotation nào được sử dụng để tạo một attribute trong model",
+            "ans": "@ModelAttribute"
+        },
+        {
+            "ques": "Annotation nào được sử dụng để yêu cầu Spring kiểm lỗi bean?",
+            "ans": [
+                "@Valid",
+                "@Validated"
+            ]
+        },
+        {
+            "ques": "Annotation nào được sử dụng để ánh xạ request từ người sử dụng với một phương thức trong controller?",
+            "ans": "@RequestMapping"
+        },
+        {
+            "ques": "Annotation nào được sử dụng để ánh xạ đến phương thức action",
+            "ans": "@RequestMapping"
+        },
+        {
+            "ques": "Annotation nào được sử dụng để đánh dấu phương thức action?\n1. @Controller\n2 @RequestMapping",
+            "ans": "Cách 2 đúng, cách 1 sai"
+        },
+        {
+            "ques": "Bộ thư viện thẻ nào của Spring Boot cho phép truy xuất và hiển thị tài nguyên đa ngôn ngữ?",
+            "ans": "<%@ taglib uri=\"http://www.springframework.org/tags\" prefix=\"s\" %>"
+        },
+        {
+            "ques": "Cho 2 cách ánh xạ phương thức action sau:\n1. @RequestMapping(value=\"home\")\n2. @RequestMapping(\"home\")",
+            "ans": "Cả 2 cách cùng đúng"
+        },
+        {
+            "ques": "Cho 2 cách ánh xạ phương thức action sau:\n1. @RequestMapping(value=\"home\", method=RequestMethod.POST)\n2. @RequestMapping(\"home\", method=RequestMethod.POST)",
+            "ans": "Cách 1 đúng, cách 2 sai"
+        },
+        {
+            "ques": "Cho 2 khai báo chọn view như sau\n&lt;definition name=\"a/*\" extends=\"parent\"&gt;\n&lt;put-attribute name=\"body\" value=\"/admin/{1}.jsp\" /&gt;\n&lt;/definition&gt;\n&lt;definition name=\"b/*\" extends=\"parent\"&gt;\n&lt;put-attribute name=\"body\" value=\"/user/{1}.jsp\" /&gt;\n&lt;/definition&gt;\nHãy cho biết khi controller return \"b/hello\" thì file jsp nào sẽ được sử dụng để cung cấp nội dung cho vùng \"body\" trong layout",
+            "ans": "/user/b/hello.jsp"
+        },
+        {
+            "ques": "Cho 2 khai báo chọn view như sau\n<definition name=\"a/*\" extends=\"parent\">\n<put-attribute name=\"body\" value=\"/admin/{1}.jsp\" />\n</definition>\n<definition name=\"b/*\" extends=\"parent\">\n<put-attribute name=\"body\" value=\"/user/{1}.jsp\" />\n</definition>\nHãy cho biết khi controller return \"b/hello\" thì file jsp nào sẽ được sử dụng để cung cấp nội dung cho vùng \"body\" trong layout",
+            "ans": "/user/b/hello.jsp"
+        },
+        {
+            "ques": "Cho 2 phát biểu liên quan đến file tài nguyên như sau\n1. File phải có đuôi là properties\n2. Mỗi hàng trong file là một cặp key=value, với key là duy nhất",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu liên quan đến file tài nguyên như sau 1. File phải có đuôi là properties",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu sau:\n1. MimeMessage chứa thông tin của một email cần gửi đi\n2. MimeMessageHelper chứa thông tin của một email cần gửi đi",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu sau:\n1. MimeMessage chứa thông tin của một email cần gửi đi\n2. MimeMessageHelper hỗ trợ đưa thông tin lên MimeMessage",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về @Autowired\n1. Dựa vào kiểu dữ liệu của biến để tìm kiếm và liên kết đến Spring Bean có kiểu phù hợp. \n2. Nếu có nhiều hơn một Spring Bean có kiểu phù hợp với biến thì hệ thống sẽ báo lỗi",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về DI sau:\n1. DI là cách truyền một module vào một module khác thông qua cấu hình XML hay viết mã dưới sự hỗ trợ của DI container\n2. DI được dùng để làm giảm sự phụ thuộc giữa các module, dễ dàng hơn trong việc thay đổi module, bảo trì code và testing.",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về DI sau:\n1. Spring framework hỗ trợ DI container\n2. Servlet thông thường có hỗ trợ DI container",
+            "ans": "Phát biểu 1 đúng, phát biểu 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Hibernate như sau:\n1. Hibernate không những ổn định, tin cậy mà còn giúp giảm giảm thiểu công việc của người lập trình CSDL.\n2. Câu lệnh truy vấn đối tượng của Hibernate phụ thuộc loại CSDL làm việc",
+            "ans": "Phát biểu 1 đúng, phát biểu 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Hibernate như sau:\n1. Hibernate đóng vai trò là tầng trung gian giữa các đối tượng và CSDL để điều khiển các công việc quản lý lưu trữ trạng thái của các đối tượng đó dựa trên cơ sở ánh xạ.\n2. Hibernate ánh xạ các lớp thực thể vào các bảng của CSDL quan hệ thông qua XML hoặc annotation.",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Schedule Task như sau:\n1. Schedule Task là cơ chế cho phép thực hiện các công việc được xếp lịch sẵn\n2. Schedule Task tham gia vào việc chống ùn tắc các nhiệm vụ tốn nhiều thời gian rất hiệu quả",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Spring Boot\n1. Có thể chạy ứng dụng web chạy bằng cơ chế dòng lệnh hoặc xuất ra file war để triển khai lên Web Server.\n2. Dễ dàng tương tác với hệ sinh thái công nghệ của Spring (JDBC, ORM, Security…)",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Spring Boot\n1. Nguyên tắc “Cấu hình mặc định” giảm thiểu viết mã cấu hình\n2. Cho phép nhúng Web Server vào ứng dụng.",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Spring sau\n1. Spring hỗ trợ IoC, DI giúp dễ dàng mở rộng ứng dụng\n2. Spring rất nhẹ trong việc phát triển và triển khai.",
+            "ans": "1 sai, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Spring sau\n1. Spring hỗ trợ IoC, DI giúp dễ dàng mở rộng ứng dụng\n2. Spring rất nhẹ trong việc phát triển và triển khai.",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Spring sau\n1. Spring hỗ trợ IoC, DI giúp dễ dàng mở rộng ứng dụng\n2. Spring rất nhẹ trong việc phát triển và triển khai.",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về Spring sau\n1. Spring là framework được giới thiệu 2003 bởi Rod Johnson.\n2. Spring là mã nguồn mở sử dụng để phát triển ứng dụng java phổ biến nhất hiện nay.",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về TransactionManager sau:\n1. TransactionManager được Spring nạp vào để quản lý transaction tự động.\n2. Spring sẽ tự tạo một session và commit hoặc rollback tự động để tăng hiệu suất trong việc xử lý thao tác CSDL",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về annotation kiểm lỗi sau:\n1. Tất cả annotation kiểm lỗi đều có thuộc tính message\n2. Nếu không cung cấp thông báo lỗi cho thuộc tính message thì hệ thống sẽ hiển thị lỗi mặc định khi có lỗi",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về chú thích @Scheduled(cron = \"0 * * * * MON-FRI“, initialDelay = 5000)\n1. Giây đầu tiên của mỗi phút các ngày trong tuần (thứ 2 đến thứ 6)\n2. Sau khi khởi động 5 giây thì lịch trình bắt đầu",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về chú thích @Scheduled(fixedDelay = 3000, initialDelay = 5000)\n1. Thời gian chờ hoạt động tiếp sau là 3 giây\n2. Sau khi khởi động 5 giây thì lịch trình bắt đầu",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về chú thích @Scheduled(fixedRate = 3000, initialDelay = 5000)\n1. Thời gian giữa các hoạt động là 3 giây\n2. Sau khi khởi động 5 giây thì lịch trình bắt đầu",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về các bean liên quan đến việc xây dựng giao diện đa ngôn ngữ\n1. Bean LocaleChangeInterceptor được sử dụng như là interceptor để nhận biết sự thay đổi ngôn ngữ\n2. Để thay đổi ngôn ngữ chỉ cần gọi bất kỳ action nào trong website và truyền tham số có tên đã được khai báo trong bean LocaleChangeInterceptor",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về cách sử dụng session trong Spring như sau:\n1. Khi bạn muốn điều khiển lỗi thao tác dữ liệu thì phải mở session mới với openSession()\n2. Khi truy vấn dữ liệu hoặc thao tác nhưng khả năng xảy ra lỗi rất thấp thì sử dụng session do hệ thống mở sẵn với getCurrentSession()",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về fixDelay của @Scheduled như sau\n1. Khoảng thời gian (mili giây) giữa kết thúc hoạt động trước và bắt đầu hoạt động\n2. Khoảng thời gian (mili giây) cố định giữa các lần thực hiện",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về fixDelay của @Scheduled như sau1. Khoảng thời gian (mili giây) giữa kết thúc hoạt động trước và bắt đầu hoạt động2. Khoảng thời gian (mili giây) cố định giữa các lần thực hiện",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về fixDelay và fixRate của @Scheduled như sau\n1. fixDelay: Khoảng thời gian (mili giây) giữa kết thúc hoạt động trước và bắt đầu hoạt động\n2. fixRate: Khoảng thời gian (mili giây) cố định giữa các lần thực hiện",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về fixDelay và fixRate của @Scheduled như sau\n1. fixRate: Khoảng thời gian (mili giây) giữa kết thúc hoạt động trước và bắt đầu hoạt động\n2. fixDelay: Khoảng thời gian (mili giây) cố định giữa các lần thực hiện",
+            "ans": "1 sai, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về fixRate của @Scheduled như sau\n1. Khoảng thời gian (mili giây) giữa kết thúc hoạt động trước và bắt đầu hoạt động\n2. Khoảng thời gian (mili giây) cố định giữa các lần thực hiện",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về fixRate của @Scheduled như sau1. Khoảng thời gian (mili giây) giữa kết thúc hoạt động trước và bắt đầu hoạt động2. Khoảng thời gian (mili giây) cố định giữa các lần thực hiện",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về giải quyết giải quyết xung đột khi nạp 2 bean cùng kiểu\n1. Cấu hình @Bean với @Primary để báo cho hệ thống biết đó là bean chính\n2. Đặt id cho bean và sử dụng @Qualifier(id) bên cạnh @Autowired",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về initialDelay của @Scheduled như sau\n1. Khoảng thời gian (mili giây) chờ hoạt động đầu tiên\n2. Khoảng thời gian (mili giây) cố định giữa các lần thực hiện",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về initialDelay của @Scheduled như sau\n1. Khoảng thời gian (mili giây) giữa kết thúc hoạt động trước và bắt đầu hoạt động\n2. Khoảng thời gian (mili giây) cố định giữa các lần thực hiện",
+            "ans": "1 sai, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về khai báo thông báo lỗi:\n1. Gán thông báo lỗi cho thuộc tính message của annotation kiểm lỗi\n2. Khai báo trong file tài nguyên properties",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về kiểm lỗi form sau:\n1. Với AngularJS các qui luật kiểm lỗi được tăng cường đáng kể, giúp kiểm lỗi thuận tiện hơn.\n2. AngularJS không những cho biết tình trạng lỗi của các điều khiển mà còn cho biết tình trạng lỗi của form.",
+            "ans": "Phát biểu 1 sai, phát biểu 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về việc tiêm Spring Bean\n1. Chỉ được tiêm một Spring Bean vào một lớp Spring Bean khác\n2. Có thể tiêm một Spring Bean vào một lớp bất kỳ",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về việc tiêm Spring Bean\n1. Chỉ được tiêm một Spring Bean vào một lớp Spring Bean khác\n2. Có thể tiêm một Spring Bean vào một lớp bất kỳ",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về về các annotation của Schedule Task như sau:\n1. @EnableScheduling chú thích trên lớp cấu hình chính để kích hoạt cơ chế Schedule Task\n2. @Scheduled chú thích trên phương thức của Spring Bean muốn thực hiện định kỳ",
+            "ans": [
+                "1 đúng, 2 sai",
+                "1 đúng, 2 đúng"
+            ]
+        },
+        {
+            "ques": "Cho 2 phát biểu về vị trí của đối số tích lũy lỗi:\n1. Đối số BindingResult hoặc Errors bắt buộc phải đặt ngay sau bean được kiểm lỗi\n2. Đối số BindingResult hoặc Errors không bắt buộc phải đặt ngay sau bean được kiểm lỗi",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu về vị trí của đối số tích lũy lỗi:\n1. Đối số BindingResult hoặc Errors bắt buộc phải đặt ngay sau bean được kiểm lỗi\n2. Đối số BindingResult hoặc Errors không bắt buộc phải đặt ngay sau bean được kiểm lỗi",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho 2 phát biểu về đối số của @RequestMapping sau:\n1. method chỉ rõ phương thức web\n2. params chỉ ra các tham số cần thiết phải có",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu:\n1. Databinding là sự kết nối dữ liệu của bean đặt trong model đến các điều khiển trên form.\n2. Khi thay đổi dữ liệu trong bean thì dữ liệu trên các điều khiển cũng thay đổi theo.",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu:\n1. Spring framework là nền tảng mã nguồn mở. Nó cung cấp cơ sở hạ tầng toàn diện để phát triển ứng dụng Java một cách mạnh mẽ, rất dễ dàng và nhanh chóng. \n2. Spring framework được tạo bởi Rod Johnson và được giới thiệu vào tháng 6 năm 2003.",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho 2 phát biểu:\n1. Spring là framework phát triển ứng dụng Java phổ biến nhất đối với doanh nghiệp. \n2. Spring Framework được hàng triệu nhà phát triển ứng dụng trên toàn thế giới sử dụng để tạo ra các sản phẩm phần mềm với hiệu suất cao, dễ dàng kiểm chứng, tái sử dụng mã.",
+            "ans": "Phát biểu 1 đúng, phát biểu 2 sai"
+        },
+        {
+            "ques": "Cho câu lệnh HQL sau: \"FROM HocSinh\". Từ HocSinh được hiểu như thế nào?\n1. Tên lớp thực thể\n2. Tên bảng trong CSDL",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho cấu hình nạp file tài nguyên như sau:\n@Bean(\"messageSource\")\npublic MessageSource getMessageSource() {\nReloadableResourceBundleMessageSource ms = new ReloadableResourceBundleMessageSource();\nms.setBasenames(\"classpath:i18n/messages\");\nms.setDefaultEncoding(\"utf-8\");\nreturn ms;\n}\nHỏi file messages.properties đặt ở thư mục nào?",
+            "ans": "src/main/resources/i18n"
+        },
+        {
+            "ques": "Cho cấu hình nạp file tài nguyên như sau:\n@Bean(\"messageSource\")\npublic MessageSource getMessageSource() {\nReloadableResourceBundleMessageSource ms = new ReloadableResourceBundleMessageSource();\nms.setBasenames(\"classpath:i18n/messages\");\nms.setDefaultEncoding(\"utf-8\");\nreturn ms;\n}\nHỏi file messages.properties đặt ở thư mục nào?",
+            "ans": "src/main/test/i18n"
+        },
+        {
+            "ques": "Cho hai phát biểu về Filter và Interceptor như sau:\n1. Filter thực hiện sau Interceptor\n2. Interceptor thực hiện sau Filter",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Cho hai phát biểu về Filter và Interceptor như sau:\n1. Filter thực hiện trước Interceptor\n2. Interceptor thực hiện trước Filter",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho hai phát biểu về Interceptor như sau:\n1. preHandle() chạy sau controller\n2. postHandle() chạy trước controller",
+            "ans": "1 sai, 2 sai"
+        },
+        {
+            "ques": "Cho hai phát biểu về Interceptor như sau:\n1. preHandle() chạy trước controller\n2. postHandle() chạy sau controller",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cho hai phát biểu về Interceptor như sau:\n1. preHandle() chạy trước controller\n2. postHandle() chạy trước controller",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho hai phát biểu về hiển thị dữ liệu từ tài nguyên đa ngôn ngữ:\n1. Khai báo thẻ <%@ taglib uri=\"http://www.springframework.org/tags\" prefix=\"s\" %>\n2. Hiển thị <s:message code=\"key\"/>",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Cho khai báo phương thức ánh xạ như sau\n@RequestMapping(\"/test\")\npublic String m(@ModelAttribute Date now) {\nreturn \"view\";\n}\nĐâu là biểu thức đúng để đọc và hiển thị ngày trong view.jsp",
+            "ans": "${now.date}"
+        },
+        {
+            "ques": "Cho khai báo phương thức ánh xạ như sau\n@RequestMapping(\"/test\")\npublic String m(@ModelAttribute Date now) {\nreturn \"view\";\n}\nĐâu là biểu thức đúng để đọc và hiển thị ngày trong view.jsp",
+            "ans": "${date.date}"
+        },
+        {
+            "ques": "Cho lớp thực thể như sau:\n@Data\n@Entity \n@Table(name = \"Categories\")\npublic class Category implements Serializable{\n@Id\nString id;\nString name;\n}\nHãy điền vào chỗ còn thiếu để tạo DAO làm việc với bảng Categories\npublic interface CategoryDAO extends JpaRepository<?1, ?1>{\n}",
+            "ans": "Category, String"
+        },
+        {
+            "ques": "Cho mã HomeController như sau:\n@Controller\n@RequestMapping(\"/home\")\npublic class HomeController {\n@RequestMapping(\"about\")\npublic String about() {\nreturn \"redirect:/home/index.htm\";\n}\n}\nDòng lệnh return ở trên có ý nghĩa gì?\n1. Chọn view index.jsp trong thư mục home\n2. Chuyển sang action home/index",
+            "ans": "2 đúng, 1 sai"
+        },
+        {
+            "ques": "Cho mã HomeController như sau:\n@Controller\n@RequestMapping(\"/home\")\npublic class HomeController {\n@ResponseBody\n@RequestMapping(\"about\")\npublic String about() {\nreturn \"redirect:/home/index.htm\";\n}\n}\nDòng lệnh return ở trên có ý nghĩa gì?\n1. Trả chuỗi \"redirect:/home/index.htm\" về client\n2. Chuyển sang action home/index",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho đoạn mã HTML và JavaScript như sau\n<a href=\"#\" data-lang=\"en\">English</a> |\n<a href=\"#\" data-lang=\"vi\">Tiếng Việt</a>\n<script>\n1. $(function(){\n2. $(\"a[data-lang]\").click(function(){\n3. var lang = $(this).attr(\"data-lang\");\n4. $.get(\"home/index.htm?language=\"+ lang, function(){\n5. location.reload();\n6. });\n7. return false;\n8. });\n9. });\n10.</script>\nDòng mã lệnh số 3 thực hiện công việc gì?",
+            "ans": "Lấy giá trị của thuộc tính data-lang của thẻ a bị click"
+        },
+        {
+            "ques": "Cho đoạn mã HTML và JavaScript như sau\n<a href=\"#\" data-lang=\"en\">English</a> |\n<a href=\"#\" data-lang=\"vi\">Tiếng Việt</a>\n<script>\n1. $(function(){\n2. $(\"a[data-lang]\").click(function(){\n3. var lang = $(this).attr(\"data-lang\");\n4. $.get(\"home/index.htm?language=\"+ lang, function(){\n5. location.reload();\n6. });\n7. return false;\n8. });\n9. });\n10.</script>\nDòng mã lệnh số 4 thực hiện công việc gì?",
+            "ans": "Gọi action home/index.htm"
+        },
+        {
+            "ques": "Cho đoạn mã HTML và JavaScript như sau\n<a href=\"#\" data-lang=\"en\">English</a> |\n<a href=\"#\" data-lang=\"vi\">Tiếng Việt</a>\n<script>\n1. $(function(){\n2. $(\"a[data-lang]\").click(function(){\n3. var lang = $(this).attr(\"data-lang\");\n4. $.get(\"home/index.htm?language=\"+ lang, function(){\n5. location.reload();\n6. });\n7. return false;\n8. });\n9. });\n10.</script>\nDòng mã lệnh số 7 thực hiện công việc gì?",
+            "ans": "Hủy thao tác click vào thẻ a chứa thuộc tính data-lang"
+        },
+        {
+            "ques": "Cho đoạn mã sau. Các mục trong select box được nhìn thấy là gì?\n<div ng-app=\"myApp\">\n<form ng-controller=\"myCtrl\">\n<select ng-model=\"staff\"\nng-options=\"value.id for (key, value) in staffs\"></select>\n</form>\n</div>\n<script>\nvar app = angular.module(\"myApp\", []);\napp.controller(\"myCtrl\", function ($scope) {\n$scope.staffs = {\n\"NV001\": { id: \"NV001\", name: \"Nguyễn Chí Phèo\" },\n\"NV002\": { id: \"NV002\", name: \"Phạm Thị Nở\" }\n};\n});\n</script>",
+            "ans": "Mã nhân viên"
+        },
+        {
+            "ques": "Cho đoạn mã sau. Các mục trong select box được nhìn thấy là gì?\n<div ng-app=\"myApp\">\n<form ng-controller=\"myCtrl\">\n<select ng-model=\"staff\"\nng-options=\"value.name for (key, value) in staffs\"></select>\n</form>\n</div>\n<script>\nvar app = angular.module(\"myApp\", []);\napp.controller(\"myCtrl\", function ($scope) {\n$scope.staffs = {\n\"NV001\": { id: \"NV001\", name: \"Nguyễn Chí Phèo\" },\n\"NV002\": { id: \"NV002\", name: \"Phạm Thị Nở\" }\n};\n});\n</script>",
+            "ans": "Họ và tên nhân viên"
+        },
+        {
+            "ques": "Cho đoạn mã sau. Các mục trong select box được nhìn thấy là gì?\n<div ng-app=\"myApp\">\n<form ng-controller=\"myCtrl\">\n<select ng-model=\"staff\" ng-options=\"s.name for s in staffs\"></select>\n</form>\n</div>\n<script>\nvar app = angular.module(\"myApp\", []);\napp.controller(\"myCtrl\", function ($scope) {\n$scope.staffs = [\n{id:\"NV001\", name:\"Nguyễn Chí Phèo\"},\n{id:\"NV002\", name:\"Phạm Thị Nở\"}\n];\n});\n</script>",
+            "ans": "Họ và tên nhân viên"
+        },
+        {
+            "ques": "Cho đoạn mã sau. Giá trị được buộc vào model là gì?\n<div ng-app=\"myApp\">\n<form ng-controller=\"myCtrl\">\n<select ng-model=\"id\">\n<option ng-repeat=\"s in staffs\" value=\"{{s.id}}\">{{s.name}}</option>\n</select>\n</form>\n</div>\n<script>\nvar app = angular.module(\"myApp\", []);\napp.controller(\"myCtrl\", function ($scope) {\n$scope.staffs = [\n{id:\"NV001\", name:\"Nguyễn Chí Phèo\"},\n{id:\"NV002\", name:\"Phạm Thị Nở\"}\n];\n});\n</script>",
+            "ans": "Mã nhân viên"
+        },
+        {
+            "ques": "Cho đoạn mã sau. Giá trị được buộc vào model là gì?\n<div ng-app=\"myApp\">\n<form ng-controller=\"myCtrl\">\n<select ng-model=\"staff\"\nng-options=\"value.name for (key, value) in staffs\"></select>\n</form>\n</div>\n<script>\nvar app = angular.module(\"myApp\", []);\napp.controller(\"myCtrl\", function ($scope) {\n$scope.staffs = {\n\"NV001\": { id: \"NV001\", name: \"Nguyễn Chí Phèo\" },\n\"NV002\": { id: \"NV002\", name: \"Phạm Thị Nở\" }\n};\n});\n</script>",
+            "ans": "Đối tượng Staff"
+        },
+        {
+            "ques": "Cho đoạn mã đăng ký interceptor x như sau\nregistry.addInterceptor(x)\n.addPathPatterns(\"/**\")\n.excludePathPatterns(\"/assets/**\");\nPhát biểu nào sau đây là đúng\n1. X sẽ thực hiện nếu truy xuất url /admin/a\n2. X sẽ thực hiện nếu truy xuất url /assets/a",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cho đoạn mã định nghĩa một Spring Bean như sau:\n@Service\npublic class UploadService {\n@Autowired\nServletContext app;\n\npublic File save(MultipartFile file, String path) {\nif(!file.isEmpty()) {\nFile dir = new File(app.getRealPath(path));\nif(!dir.exists()) {\ndir.mkdirs();\n}\ntry {\nFile savedFile = new File(dir, file.getOriginalFilename());\nfile.transferTo(savedFile);\nreturn savedFile;\n} catch (Exception e) {\nthrow new RuntimeException(e);\n}\n}\nreturn null;\n}\n}\nLàm thế nào để sử dụng UploadService trong một Component khác\n1. Tiêm vào field: @Autowired UploadService upload và gọi phương thức save() để lưu file upload\n2. Tiêm vào phương thức được ánh xạ và gọi phương thức save() để lưu file upload",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Chỉ sử dụng @Autowired để tiêm bean vào controller thì Spring sẽ nhận biết bean bằng cách nào?\n1. Kiểu dữ liệu\n2. Id của bean",
+            "ans": "Cách 1 đúng, cách 2 sai"
+        },
+        {
+            "ques": "Chỉ thị nào của Angular cho phép bao hàm một HTML template vào trong view",
+            "ans": "ng-include"
+        },
+        {
+            "ques": "Chọn khai báo phương thức đúng trong JSP",
+            "ans": "< %!void m(){}%>"
+        },
+        {
+            "ques": "Chọn phát biểu đúng về @DecimalMax() và @Max().",
+            "ans": "@DecimalMax() áp dụng cho cả số thực và số nguyên trong khi @Max() chỉ áp dụng cho số nguyên"
+        },
+        {
+            "ques": "Các annotation @Component, @Service và @Repository\n1. Giống nhau về mặt kỹ thuật\n2. Khác nhau về mặt ngữ nghĩa",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Các giai đoạn trong vòng đời trang JSP",
+            "ans": "Translation, Compile, Execution"
+        },
+        {
+            "ques": "Các lệnh tạo ra đối tượng Sort sau đây đúng hay sai\n1. Sort a = Sort.by(\"column1\", \"column2\")\n2. Sort b = Sort.by(Direction.DESC, \"column1\", \"column2\")",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Các trigger DDL chỉ hoạt động trước khi bảng hoặc khung nhìn được sửa đổi là đúng hay sai",
+            "ans": "sai"
+        },
+        {
+            "ques": "Các trigger DML gồm các loại chính?",
+            "ans": "Tất cả đáp án đều đúng"
+        },
+        {
+            "ques": "Cách khai báo scope nào sau đây là đúng\n1. Kết hợp với @Bean trong file cấu hình\n2. Kết hợp với @Component của class",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cách nào cho phép bạn sử dụng HttpServletRequest trong controller?\n1. Khai báo trường (field) theo cú pháp: @Autowired HttpServletRequest request;\n2. Bổ sung thêm đối số vào phương thức được ánh xạ: (HttpServletRequest request){}",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cách nào cho phép bạn sử dụng ServletContext trong controller?\n1. Khai báo trường (field) theo cú pháp: @Autowired ServletContext context\n2. Bổ sung thêm đối số vào phương thức được ánh xạ: (ServletContext context){}",
+            "ans": "1 sai, 2 sai"
+        },
+        {
+            "ques": "Cách nào cho phép bạn sử dụng ServletContext trong controller?\n1. Khai báo trường (field) theo cú pháp: @Autowired ServletContext context\n2. Bổ sung thêm đối số vào phương thức được ánh xạ: (ServletContext context){}",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Cách nào cho phép bạn sử dụng ServletContext trong controller?\n1. Khai báo trường (field) theo cú pháp: @Autowired ServletContext context\n2. Bổ sung thêm đối số vào phương thức được ánh xạ: (ServletContext context){}",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Cách nào để truyền dữ liệu từ action sang view\n1. request.setAttribute(name, value)\n2. model.addAttribute(name, value)",
+            "ans": "Cả 2 cách đều đúng"
+        },
+        {
+            "ques": "Cách tiêm bean nào được cho phép trong Spring Boot?",
+            "ans": [
+                "Tiêm qua đối số của constructor",
+                "Tiêm qua đối số của setter",
+                "Tiêm vào field"
+            ]
+        },
+        {
+            "ques": "Cách tiêm bean nào được cho phép trong Spring Boot?",
+            "ans": [
+                "@Autowired T x;",
+                "public component(@Autowired T x) {}",
+                "public void setMethod(@Autowired T x) {}"
+            ]
+        },
+        {
+            "ques": "Cách tiêm bean nào được cho phép trong Spring Boot?",
+            "ans": [
+                "Tiêm qua đối số của constructor",
+                "Tiêm qua đối số của setter",
+                "Tiêm vào field",
+                "Tiên qua getter"
+            ]
+        },
+        {
+            "ques": "Cách tiêm bean nào được cho phép trong Spring Boot?",
+            "ans": [
+                "@Autowired T x;",
+                "@Autowired public T getMethod();",
+                "public component(@Autowired T x) {}",
+                "public void setMethod(@Autowired T x) {}"
+            ]
+        },
+        {
+            "ques": "Cách tiêm bean nào được cho phép trong Spring Boot?",
+            "ans": [
+                "public component(@Autowired T x) {}"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping(value={\"/a\", \"/b\"})",
+                "@RequestMapping({\"/a\", \"/b\"})"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping(\"/a\")",
+                "@RequestMapping(url=\"/a\")",
+                "@RequestMapping(value={\"/a\"})",
+                "@RequestMapping({\"/a\"})"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping(\"/a\")",
+                "@RequestMapping(value={\"/a\"})",
+                "@RequestMapping({\"/a\"})"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping(\"/a\", \"/b\")",
+                "@RequestMapping(value={\"/a\", \"/b\"})",
+                "@RequestMapping({\"/a\", \"/b\"})"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping(value={\"/a\"})",
+                "@RequestMapping({\"/a\"})"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping(url=\"/a\")",
+                "@RequestMapping(value={\"/a\"})",
+                "@RequestMapping({\"/a\"})"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping(\"/a\", \"/b\")",
+                "@RequestMapping(value=\"/a\", \"/b\")",
+                "@RequestMapping(value={\"/a\", \"/b\"})",
+                "@RequestMapping({\"/a\", \"/b\"})"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping (\"/ a\", \"/ b\")",
+                "@RequestMapping (value = \"/ a\", \"/ b\")",
+                "@RequestMapping (value = {\"/ a\", \"/ b\"})",
+                "@RequestMapping ({\"/ a\", \"/ b\"})"
+            ]
+        },
+        {
+            "ques": "Cách ánh xạ request với url nào sau đây là đúng?",
+            "ans": [
+                "@RequestMapping(\"/a\")",
+                "@RequestMapping(url=\"/a\")"
+            ]
+        },
+        {
+            "ques": "Có bao nhiêu cách để tiêm một bean đã được khai báo trong file cấu hình vào controller",
+            "ans": "3"
+        },
+        {
+            "ques": "Dòng mã lệnh @Autowired T x có ý nghĩa gì?\n1. Yêu cầu hệ thống tìm kiếm đối tượng trong Spring Beans cùng kiểu với biến x và gán cho biến\n2. Chỉ là khai báo thông thường, @Autowired không có ý nghĩa gì",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Dự án Spring Boot được tạo ra bằng template nào trong eclipse?",
+            "ans": "Spring Boot Project"
+        },
+        {
+            "ques": "Dự án Spring Boot được tạo ra bằng template nào trong eclipse?",
+            "ans": "Spring Starter Project"
+        },
+        {
+            "ques": "File tài nguyên đa ngôn ngữ phải đặt thao nguyên tắc nào.",
+            "ans": "<tên>_<mã ngôn ngữ>.properties"
+        },
+        {
+            "ques": "Form cho chứa trường file upload phải có thuộc tính nào?\n1. method=\"POST\"\n2. enctype=\"multipart/form-data\"",
+            "ans": "Cần cả 2"
+        },
+        {
+            "ques": "Giá trị mặt định của thuộc tính method của thẻ <form:form></form:form> là gì?",
+            "ans": "POST"
+        },
+        {
+            "ques": "Giả sử HomeController định nghĩa như sau:\n@Controller\n@RequestMapping(\"/home\")\npublic class HomeController {\n@RequestMapping(\"index\")\npublic String index() {\nreturn \"home/index\";\n}\n@RequestMapping()\npublic String home() {\nreturn \"home/index\";\n}\n}\nSau đây là 2 lời gọi các action qua web:\n1. home/index.htm\n2. home.htm",
+            "ans": "Cả 2 cách cùng đúng"
+        },
+        {
+            "ques": "Giả sử controller có khai báo phương thức\n@ModelAttribute(\"genders\")\npublic List<String> getGenders(){\nreturn Arrays.asList(\"Male\", \"Female\");\n}\nVà trong String Form có chứa thẻ\n<form:checkboxes path=\"gender\" items=\"${genders}\"/>\nHỏi kết quả sinh mã HTML gồm những thẻ nào?",
+            "ans": "<input type=\"checkbox\" name=\"gender\" value=\"Female\"/>"
+        },
+        {
+            "ques": "Giả sử controller có khai báo phương thức\n@ModelAttribute(\"genders\")\npublic List<String> getGenders(){\nreturn Arrays.asList(\"Male\", \"Female\");\n}\nVà trong String Form có chứa thẻ\n<form:checkboxes path=\"gender\" items=\"${genders}\"/>\nHỏi kết quả sinh mã HTML gồm những thẻ nào?",
+            "ans": "<input type=\"checkbox\" name=\"gender\" value=\"Male\"/>"
+        },
+        {
+            "ques": "Giả sử controller có khai báo phương thức\n@ModelAttribute(\"genders\")\npublic List<String> getGenders(){\nreturn Arrays.asList(\"Male\", \"Female\");\n}\nVà trong String Form có chứa thẻ\n<form:radiobuttons path=\"gender\" items=\"${genders}\"/>\nHỏi kết quả sinh mã HTML gồm những thẻ nào?",
+            "ans": [
+                "<input type=\"radio\" name=\"gender\" value=\"Female\"/>",
+                "<input type=\"radio\" name=\"gender\" value=\"Male\"/>"
+            ]
+        },
+        {
+            "ques": "Giả sử controller có khai báo phương thức\n@ModelAttribute(\"genders\")\npublic Map<Boolean, String> getGenders(){\nMap<Boolean, String> map = new HashMap<>();\nmap.put(true, \"Male\");\nmap.put(false, \"Female\");\nreturn map;\n}\nVà trong String Form có chứa thẻ\n<form:checkboxes path=\"gender\" items=\"${genders}\"/>\nHỏi kết quả sinh mã HTML gồm những thẻ nào?",
+            "ans": "<input type=\"checkbox\" name=\"gender\" value=\"false\"/>"
+        },
+        {
+            "ques": "Giả sử controller có khai báo phương thức\n@ModelAttribute(\"genders\")\npublic Map<Boolean, String> getGenders(){\nMap<Boolean, String> map = new HashMap<>();\nmap.put(true, \"Male\");\nmap.put(false, \"Female\");\nreturn map;\n}\nVà trong String Form có chứa thẻ\n<form:checkboxes path=\"gender\" items=\"${genders}\"/>\nHỏi kết quả sinh mã HTML gồm những thẻ nào?",
+            "ans": "<input type=\"checkbox\" name=\"gender\" value=\"Male\"/>"
+        },
+        {
+            "ques": "Giả sử controller có khai báo phương thức\n@ModelAttribute(\"genders\")\npublic Map<Boolean, String> getGenders(){\nMap<Boolean, String> map = new HashMap<>();\nmap.put(true, \"Male\");\nmap.put(false, \"Female\");\nreturn map;\n}\nVà trong String Form có chứa thẻ\n<form:radiobuttons path=\"gender\" items=\"${genders}\"/>\nHỏi kết quả sinh mã HTML gồm những thẻ nào?",
+            "ans": [
+                "<input type=\"radio\" name=\"gender\" value=\"Female\"/>",
+                "<input type=\"radio\" name=\"gender\" value=\"Male\"/>"
+            ]
+        },
+        {
+            "ques": "Giả sử controller có khai báo phương thức\n@ModelAttribute(\"genders\")\npublic Map<Boolean, String> getGenders(){\nMap<Boolean, String> map = new HashMap<>();\nmap.put(true, \"Male\");\nmap.put(false, \"Female\");\nreturn map;\n}\nVà trong String Form có chứa thẻ\n<form:radiobuttons path=\"gender\" items=\"${genders}\"/>\nHỏi kết quả sinh mã HTML gồm những thẻ nào?",
+            "ans": [
+                "<input type=\"radio\" name=\"gender\" value=\"false\"/>",
+                "<input type=\"radio\" name=\"gender\" value=\"true\"/>"
+            ]
+        },
+        {
+            "ques": "Giả sử có cấu hình interceptor xử lý thay đổi ngôn ngữ như sau\n@Override\npublic void addInterceptors(InterceptorRegistry registry) {\nLocaleChangeInterceptor locale = new LocaleChangeInterceptor();\nlocale.setParamName(\"lang\");\nregistry.addInterceptor(locale).addPathPatterns(\"/language/change\");\n}\nHãy lựa chọn liên kết làm thay đổi ngôn ngữ",
+            "ans": [
+                "<a href=\"/language/change?lang=en\">",
+                "<a href=\"/language/change?lang=vi\">"
+            ]
+        },
+        {
+            "ques": "Giả sử có cấu hình interceptor xử lý thay đổi ngôn ngữ như sau@Overridepublic void addInterceptors(InterceptorRegistry registry) { LocaleChangeInterceptor locale = new LocaleChangeInterceptor(); locale.setParamName(\"lang\"); registry.addInterceptor(locale).addPathPatterns(\"/language/change\");}Hãy lựa chọn liên kết làm thay đổi ngôn ngữ",
+            "ans": [
+                "<a href=\"/language/change?lang=en\">",
+                "<a href=\"/language/change?lang=vi\">"
+            ]
+        },
+        {
+            "ques": "Giả sử có lớp thực thể\n@Entity\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class Report {\n@Id\nCategory category;\nLong count;\n}\nHãy điền vào chỗ trống để thực hiện tổng hợp số lượng sản phẩm từng loại\n@Query(\"SELECT _____ FROM Product o GROUP BY o.category\")\nList<Report> getReport();",
+            "ans": "new Report (o.category, count(o))"
+        },
+        {
+            "ques": "Giả sử có lớp thực thể\n@Entity\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class Report {\n@Id\nCategory category;\nLong count;\n}\nHãy điền vào chỗ trống để thực hiện tổng hợp số lượng sản phẩm từng loại\n@Query(\"SELECT new Report(o.category, count(o)) FROM Product o GROUP BY o.category\")\nList<_____> getReport();",
+            "ans": "Report"
+        },
+        {
+            "ques": "Giả sử file tiles.xml có chứa các định nghĩa về layout như sau\n<definition name=\"layout\" template=\"/views/layout/index.jsp\">\n<put-attribute name=\"header\" value=\"/views/layout/_header.jsp\" />\n<put-attribute name=\"body\" value=\"\" />\n<put-attribute name=\"footer\" value=\"/views/layout/_footer.jsp\" />\n</definition>\n<definition name=\"*/*\" extends=\"layout\">\n<put-attribute name=\"body\" value=\"/views/{1}/{2}.jsp\" />\n</definition>\nNếu controller return \"admin/a/b\" thì kết quả về giao diện sẽ như thế nào?",
+            "ans": "Giao diện được sinh ra từ prefix/a/b.jsp khai báo trong application.properties mà không sử dụng layout"
+        },
+        {
+            "ques": "Giả sử file tiles.xml có chứa các định nghĩa về layout như sau<definition name=\"layout\" template=\"/views/layout/index.jsp\"> <put-attribute name=\"header\" value=\"/views/layout/_header.jsp\" /> <put-attribute name=\"body\" value=\"\" /> <put-attribute name=\"footer\" value=\"/views/layout/_footer.jsp\" /></definition><definition name=\"*/*\" extends=\"layout\"> <put-attribute name=\"body\" value=\"/views/{1}/{2}.jsp\" /></definition>Nếu controller return \"admin/a/b\" thì kết quả về giao diện sẽ như thế nào?",
+            "ans": "Giao diện được sinh ra từ prefix/a/b.jsp khai báo trong application.properties mà không sử dụng layout"
+        },
+        {
+            "ques": "Giả sử khai báo 2 bean trong file cấu hình như sau:\n@Bean\npublic Date getDate1() {\nreturn new Date();\n}\n@Bean\npublic Date getDate2() {\nreturn new Date();\n}\nVà trong controller có lệnh @Autowired Date date; \nHãy chọn phát biểu đúng.",
+            "ans": "Lỗi do có nhiều hơn một bean cùng kiểu với biến"
+        },
+        {
+            "ques": "Giả sử khai báo 2 bean trong file cấu hình như sau:\n@Bean\npublic Date getDate1() {\nreturn new Date();\n}\n@Primary\n@Bean\npublic Date getDate2() {\nreturn new Date();\n}\nVà trong controller có lệnh @Autowired Date date; \nHãy chọn phát biểu đúng.",
+            "ans": "Biến date được gán với đối tượng của getDate2()"
+        },
+        {
+            "ques": "Giả sử khai báo 2 bean trong file cấu hình như sau:\n@Bean(\"d1\")\npublic Date getDate1() {\nreturn new Date();\n}\n@Bean(\"d2\")\npublic Date getDate2() {\nreturn new Date();\n}\nVà trong controller có lệnh @Qualifier(\"d1\") @Autowired Date date; \nHãy chọn phát biểu đúng.",
+            "ans": "Biến date được gán với đối tượng của getDate1()"
+        },
+        {
+            "ques": "Giả sử khai báo 2 bean trong file cấu hình như sau:@Bean(\"d1\")public Date getDate1() { return new Date();}@Bean(\"d2\")public Date getDate2() { return new Date();}Và trong controller có lệnh @Qualifier(\"d1\") @Autowired Date date; Hãy chọn phát biểu đúng.",
+            "ans": "Biến date được gán với đối tượng của getDate1()"
+        },
+        {
+            "ques": "Giả sử trong cấu hình java có khai báo bean để nạp các file tài nguyên đa ngôn ngữ như sau\n@Bean(\"messageSource\")\npublic MessageSource getMessageSource() {\nReloadableResourceBundleMessageSource ms = new ReloadableResourceBundleMessageSource();\nms.setBasenames(\"classpath:i18n/layout\", \"classpath:i18n/home\");\nms.setDefaultEncoding(\"utf-8\");\nreturn ms;\n}\nHãy cho biết các file tài nguyên đa ngôn ngữ đặt ở thư mục nào của dự án?",
+            "ans": "src/main/resources/i18n"
+        },
+        {
+            "ques": "Giả sử trong cấu hình java có khai báo bean để nạp các file tài nguyên đa ngôn ngữ như sau@Bean(\"messageSource\")public MessageSource getMessageSource() { ReloadableResourceBundleMessageSource ms = new ReloadableResourceBundleMessageSource(); ms.setBasenames(\"classpath:i18n/layout\", \"classpath:i18n/home\"); ms.setDefaultEncoding(\"utf-8\"); return ms;}Hãy cho biết các file tài nguyên đa ngôn ngữ đặt ở thư mục nào của dự án?",
+            "ans": "src/main/resources/i18n"
+        },
+        {
+            "ques": "HQL không hỗ trợ loại join nào",
+            "ans": "full join"
+        },
+        {
+            "ques": "Hãy viết phương thức DSL tương đương với truy vấn sau:\n@Query(“SELECT p FROM Product p WHERE p.available=true AND p.price=?1 OR p.name LIKE ?2 ORDER BY createDate”)",
+            "ans": [
+                "List<Product> findByAvailableTrueAndPriceEqualOrNameLikeOrderByCreateDate(double price, String name);",
+                "List<Product> findByAvailableTrueAndPriceIsOrNameLikeOrderByCreateDate(double price, String name);",
+                "List<Product> findByAvailableTrueAndPriceOrNameLikeOrderByCreateDate(double price, String name);"
+            ]
+        },
+        {
+            "ques": "Hãy viết phương thức DSL tương đương với truy vấn sau:\n@Query(“SELECT p FROM Product p WHERE p.name LIKE ?1”)",
+            "ans": [
+                "List<Product> findAllByNameLike(String name)",
+                "List<Product> findByNameLike(String name)",
+                "List<Product> getAllByNameLike(String name)",
+                "List<Product> getByNameLike(String name)"
+            ]
+        },
+        {
+            "ques": "Hãy viết phương thức DSL tương đương với truy vấn sau:\n@Query(“SELECT p FROM Product p WHERE p.price IS NULL”)",
+            "ans": [
+                "findByPriceIsNull()",
+                "findByPriceNull()"
+            ]
+        },
+        {
+            "ques": "Hãy viết phương thức DSL tương đương với truy vấn sau:\n@Query(“SELECT p FROM Product p WHERE p.price IS NULL”)",
+            "ans": [
+                "findByPriceEqualNull()",
+                "findByPriceNull()"
+            ]
+        },
+        {
+            "ques": "Hãy viết phương thức DSL tương đương với truy vấn sau:\n@Query(“SELECT p FROM Product p WHERE p.price<=?1 OR p.name LIKE ?2”)",
+            "ans": "findByPriceLessThanEqualOrNameLike(double value, String name)"
+        },
+        {
+            "ques": "Hãy viết phương thức DSL tương đương với truy vấn sau:\n@Query(“SELECT p FROM Product p WHERE p.price=?1”)",
+            "ans": [
+                "findByPrice(double value)",
+                "findByPriceEqual(double value)"
+            ]
+        },
+        {
+            "ques": "Hãy viết phương thức DSL tương đương với truy vấn sau:\n@Query(“SELECT p FROM Product p WHERE p.price=?1”)",
+            "ans": [
+                "findByPriceEqual(double value)",
+                "findByPriceLessThan(double value)"
+            ]
+        },
+        {
+            "ques": "Hãy điền tên thực thể còn thiếu vào ô trống vào ô trống\n@Query(\"SELECT o FROM Category o\")\nList<____> findByX();",
+            "ans": "Category"
+        },
+        {
+            "ques": "Hãy điền tên thực thể còn thiếu vào ô trống vào ô trống\n@Query(\"SELECT o FROM ___ o\")\nList<Product> findByX();",
+            "ans": "Product"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện câu lệnh JPQL\n@Query(\"SELECT o FROM Product o WHERE o.category.id=_____\")\nList<Product> findByCategoryId(@Param(\"id\") String id);",
+            "ans": ":id"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện câu lệnh JPQL\n@Query(\"SELECT o._____ FROM Product o WHERE o.id=?1\")\nCategory findByProduct(Integer id);",
+            "ans": "category"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện câu lệnh JPQL@Query(\"SELECT o FROM Product o WHERE o.category.id=_____\")List<Product> findByCategoryId(@Param(\"id\") String id);",
+            "ans": ":id"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn\n@Query(\"SELECT count(o) FROM Product o WHERE o.category.id=?1\")\n_____ countByCategory(String id);",
+            "ans": "Long"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn\n@Query(\"SELECT o FROM Product o WHERE o.category.id=:cid\")\nList<Product> findByCategoryId(_____ String id);",
+            "ans": "@Param(\"cid\")"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn\n@Query(\"SELECT o.category FROM Product o WHERE o.id=?1\")\n_____ findByProduct(Integer id);",
+            "ans": "Category"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn\n@Query(\"SELECT o.name FROM Product o\")\nList<_____> findProducts(Integer id);",
+            "ans": "String"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn\n@Query(\"SELECT o.name, o.price FROM Product o\")\nList<_____> findProducts(Integer id);",
+            "ans": "Object[]"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn có sắp xếp\n@Query(\"SELECT o FROM Product o WHERE o.name LIKE ?2\")\nList<Product> findItems(_____, _____);\n1. Sort sort, String keywords\n2. String keywords, Sort sort",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn có sắp xếp@Query(\"SELECT o FROM Product o WHERE o.name LIKE ?2\")List<Product> findItems(_____, _____);1. Sort sort, String keywords2. String keywords, Sort sort",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn@Query(\"SELECT count(o) FROM Product o WHERE o.category.id=?1\")_____ countByCategory(String id);",
+            "ans": "Long"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn@Query(\"SELECT o FROM Product o WHERE o.category.id=:cid\")List<Product> findByCategoryId(_____ String id);",
+            "ans": "@Param(\"cid\")"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức truy vấn@Query(\"SELECT o.name FROM Product o\")List<_____> findProducts(Integer id);",
+            "ans": "String"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức đếm sản phẩm theo loại\n@Query(\"SELECT _____(o) FROM Product o WHERE o.category.id=?1\")\nLong countByCategory(String id);",
+            "ans": "count"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để hoàn thiện phương thức đếm sản phẩm theo loại@Query(\"SELECT _____(o) FROM Product o WHERE o.category.id=?1\")Long countByCategory(String id);",
+            "ans": "count"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để thực hiện tổng hợp số lượng sản phẩm từng loại\n@Query(\"SELECT o.category, count(o) FROM Product o GROUP BY o.category\")\nList<_____> getReport();",
+            "ans": "Object[]"
+        },
+        {
+            "ques": "Hãy điền vào chỗ trống để thực hiện đếm sản phẩm theo khoảng giá\n@Query(value = \"SELECT COUNT(*) FROM Products WHERE Price BETWEEN ?1 AND ? 2\", nativeQuery = true)\n_____ countByPrice(double min, double max);",
+            "ans": "Long"
+        },
+        {
+            "ques": "Hãy điền vào các chỗ trống để hoàn thiện phương thức truy vấn sản phẩm\n@Query(value = \"SELECT * FROM _____ WHERE Name LIKE ?1\", nativeQuery = true)\nList<_____> findByKeyword(String keyword);",
+            "ans": "Products, Product"
+        },
+        {
+            "ques": "Khai báo ViewResolver nhằm mục đích gì?",
+            "ans": "Để đưa ra qui luật xác định view được thực hiện để sinh giao diện"
+        },
+        {
+            "ques": "Khai báo thư viện cần thiết DevTool có tác dụng gì trong dự án Spring Boot?\n1. Tự dịch lại khi có thay đổi trong dự án\n2. Làm cho ứng dụng chạy nhanh hơn",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Khi bạn khai báo bean ReloadableResourceBundleMessageSource với thuộc tính basenames là <property name=\"basenames\"><list><value>classpath:global</value></list></property> thì file tài nguyên global.properties đặt ở đâu?",
+            "ans": "Thư mục WebContext"
+        },
+        {
+            "ques": "Khi bạn sử dụng controllerAs trong tùy chọn định tuyến thì bạn phải thay đổi cách viết mã như thế nào?\n1. Trong controller sử dụng this thay vì $scope\n2. Trong view phải sử dụng bí danh controller thay cho truy xuất trực tiếp.",
+            "ans": "Cần cả 2 cách"
+        },
+        {
+            "ques": "Khi khai báo ViewResolver có prefix là \"/WEB-INF/views/layout.jsp?view=\" và suffix là \".jsp\" và khi action return giá trị là \"home/index\" thì trang jsp nào sẽ chạy?",
+            "ans": "/WEB-INF/views/layout.jsp?view=home/index.jsp"
+        },
+        {
+            "ques": "Khi làm việc với form spring bạn bắt buộc phải khai báo thư viện nào",
+            "ans": "<%@ taglib uri=\"http://www.springframework.org/tags/form\" %>"
+        },
+        {
+            "ques": "Khi nào cần sử dụng @ApplicationScope, @SessionScope, @RequestScope?\n1. Chia sẻ dữ liệu trong bean theo scope\n2. Tránh lãng phí bộ nhớ",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Khi tạo dự án Spring Boot, bạn cần chọn tối thiểu thư viện cần thiết nào?",
+            "ans": "Spring Web"
+        },
+        {
+            "ques": "Khi xuất kết quả từ TestNG sang Excel dùng thư viện nào để tích hợp webdriver?",
+            "ans": "selenium-server-standalone"
+        },
+        {
+            "ques": "Kiểu dữ liệu để nhận trường file khi upload là gì?",
+            "ans": "MultipartFile"
+        },
+        {
+            "ques": "Lombok giúp developer những gì?\n1. Sinh mã tự động cho một số thành phần\n2. Ứng dụng chạy nhanh hơn",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Lombok giúp developer những gì?\n1. Sinh mã tự động cho một số thành phần\n2. Ứng dụng chạy nhanh hơn",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Lombok hỗ trợ những annotation nào?",
+            "ans": [
+                "@Data",
+                "@Getter",
+                "@Setter"
+            ]
+        },
+        {
+            "ques": "Lombok hỗ trợ những annotation nào?",
+            "ans": [
+                "@Class",
+                "@Data",
+                "@Getter",
+                "@Setter"
+            ]
+        },
+        {
+            "ques": "Lombok hỗ trợ những annotation nào?",
+            "ans": [
+                "@AllArgsContructor",
+                "@NoArgsContructor"
+            ]
+        },
+        {
+            "ques": "Lombok hỗ trợ những annotation nào?",
+            "ans": [
+                "@AllArgsContructor",
+                "@Controller",
+                "@NoArgsContructor",
+                "@RequestMapping"
+            ]
+        },
+        {
+            "ques": "Lombok hỗ trợ những annotation nào?",
+            "ans": [
+                "@AllArgsContructor",
+                "@NoArgsContructor",
+                "@RequestMapping"
+            ]
+        },
+        {
+            "ques": "Lombok hỗ trợ những annotation nào?",
+            "ans": [
+                "@AllArgsContructor",
+                "@Controller",
+                "@NoArgsContructor"
+            ]
+        },
+        {
+            "ques": "Làm thế nào để sử dụng Model để chia sẻ dữ liệu từ controller với view?",
+            "ans": [
+                "Gọi phương thức addAttribute()",
+                "Gọi phương thức setAttribute()",
+                "Khai báo trường (field) theo cú pháp @Autowired Model model",
+                "Thêm đối số Model vào phương thức được ánh xạ"
+            ]
+        },
+        {
+            "ques": "Làm thế nào để sử dụng Model để chia sẻ dữ liệu từ controller với view?",
+            "ans": [
+                "Gọi phương thức addAttribute()",
+                "Thêm đối số Model vào phương thức được ánh xạ"
+            ]
+        },
+        {
+            "ques": "Làm thế nào để sử dụng Model để chia sẻ dữ liệu từ controller với view?",
+            "ans": [
+                "Gọi phương thức addAttribute()",
+                "Gọi phương thức setAttribute()",
+                "Thêm đối số Model vào phương thức được ánh xạ"
+            ]
+        },
+        {
+            "ques": "Làm thế nào để đóng gói và triển khai ứng dụng web Spring Boot?",
+            "ans": [
+                "Copy file war vào thư mục webapps của Tomcat"
+            ]
+        },
+        {
+            "ques": "Làm thế nào để đóng gói và triển khai ứng dụng web Spring Boot?",
+            "ans": [
+                "Chạy startup.bat",
+                "Copy file war vào thư mục webapps của Tomcat",
+                "Export war"
+            ]
+        },
+        {
+            "ques": "Làm thế nào để đóng gói và triển khai ứng dụng web Spring Boot?",
+            "ans": [
+                "Chạy eclipse",
+                "Chạy startup.bat",
+                "Copy file war vào thư mục webapps của Tomcat",
+                "Export war"
+            ]
+        },
+        {
+            "ques": "Làm thế nào để đăng ký Interceptor của bạn để chặn các url?",
+            "ans": [
+                "Cung cấp các url cần chắn và không cần chắn",
+                "Override phương thức addInterceptors",
+                "Thêm interceptor vào registry",
+                "Tạo lớp cấu hình thực thi interface WebMvcConfigurer"
+            ]
+        },
+        {
+            "ques": "Lệnh nào được sử dụng để truy vấn một thực thể theo khóa chính (@Id)\n1. T entity = dao.findById(id).get()\n2. T entity = dao.getOne(id);",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Lệnh nào được sử dụng để truy vấn một thực thể theo khóa chính (@Id) 1. T entity = dao.findById(id).",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Mục đích của @RequestPart() là gì?",
+            "ans": "Làm việc với biến đường dẫn"
+        },
+        {
+            "ques": "Mục đích của @RequestPart() là gì?",
+            "ans": "Làm việc với file upload"
+        },
+        {
+            "ques": "Nếu trong trang home.jsp có chứa đoạn mã  và khi yêu cầu trang home.jsp?page=abc.jsp chạy thì điều g",
+            "ans": "Phát biểu 1 đúng, phát biểu 2 sai"
+        },
+        {
+            "ques": "Nếu trong trang home.jsp có chứa đoạn mã <jsp:include page=\"${param.page}\"/> và khi yêu cầu trang home.jsp?page=abc.jsp chạy thì điều gì xảy ra:\n1. Kết quả của trang abc.jsp sẽ được kết xuất tại vị trí đặt mã <jsp:include/>\n2. Lỗi vì jsp không hỗ trợ mã <jsp:include/>",
+            "ans": "Phát biểu 1 đúng, phát biểu 2 sai"
+        },
+        {
+            "ques": "Nếu trong trang home.jsp có chứa đoạn mã <jsp:include page=\"a.jsp\"/> và khi yêu cầu trang home.jsp chạy thì điều gì xảy ra:\n1. Kết quả của trang a.jsp sẽ được kết xuất tại vị trí đặt mã <jsp:include/>\n2. Lỗi vì jsp không hỗ trợ mã <jsp:include/>",
+            "ans": "Phát biểu 1 đúng, phát biểu 2 sai"
+        },
+        {
+            "ques": "Page chứa kết quả truy vấn phân trang. Gọi phương thức nào để lấy danh sách (List<T>) các thực thể của trang truy vấn?",
+            "ans": "getContent()"
+        },
+        {
+            "ques": "Page chứa kết quả truy vấn phân trang. Gọi phương thức nào để lấy số thực thể hiện có của trang?",
+            "ans": "getNumberOfElements()"
+        },
+        {
+            "ques": "Page chứa kết quả truy vấn phân trang. Gọi phương thức nào để lấy tổng số thực thể truy vấn được?",
+            "ans": "getTotalElements()"
+        },
+        {
+            "ques": "Page chứa kết quả truy vấn phân trang. Gọi phương thức nào để lấy tổng số trang truy vấn được?",
+            "ans": "getTotalPages()"
+        },
+        {
+            "ques": "Phiên bản 5 được giưới thiệu vào năm nào?",
+            "ans": "2018"
+        },
+        {
+            "ques": "Phát biểu \"Tạo bean ngay từ lúc bắt đầu một phiên, chia sẻ trên phạm vi session và giải phóng khi session timeout\" là nói về Spring Bean với Scope nào?",
+            "ans": "@SessionScope"
+        },
+        {
+            "ques": "Phát biểu \"Tạo bean ngay từ lúc bắt đầu một request, chia sẻ trên phạm vi request và giải phóng ngay khi request kết thúc\" là nói về Spring Bean với Scope nào?",
+            "ans": "@RequestScope"
+        },
+        {
+            "ques": "Phát biểu \"Tạo bean ngay từ đầu, chia sẻ trên phạm vi application và giải phóng khi ứng dụng kết thúc\" là nói về Spring Bean với Scope nào?",
+            "ans": "@ApplicationScope"
+        },
+        {
+            "ques": "Phát biểu nào chính xác nhất về Trigger DML ?",
+            "ans": "Các trigger DML thực thi trong hoặc sau khi dữ liệu được sửa đổi."
+        },
+        {
+            "ques": "Phương thức nào của BindingResult cho biết bean được kiểm lỗi có lỗi hay không?",
+            "ans": "isErrors()"
+        },
+        {
+            "ques": "Phương thức nào của BindingResult cho biết bean được kiểm lỗi có lỗi hay không?",
+            "ans": "hasErrors()"
+        },
+        {
+            "ques": "Phương thức nào của JavaMailSender thực hiện gửi email?",
+            "ans": "send(MimeMessage)"
+        },
+        {
+            "ques": "Phương thức nào của MimeMessageHelper cho phép đính kèm file vào email",
+            "ans": "addAttachment()"
+        },
+        {
+            "ques": "Phương thức nào của MimeMessageHelper chỉ ra người nhận thư phản hồi",
+            "ans": "setReplyTo()"
+        },
+        {
+            "ques": "Phương thức nào của MultipartFile cho phép chuyển file đã upload đến vị trí mới",
+            "ans": "transferTo()"
+        },
+        {
+            "ques": "Phương thức nào đúng truy vấn sản phẩm theo loại\n1.\n@Query(\"SELECT o FROM Product o WHERE o.category.id=?1\")\nList<Product> findByCategoryId(String id);\n2. \n@Query(\"SELECT o FROM Product o WHERE o.category.id=:id\")\nList<Product> findByCategoryId(@Param(\"id\") String id);",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Phương thức nào đúng truy vấn sản phẩm theo loại 1. @Query(\"SELECT o FROM Product o WHERE o.catego..",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Phương thức sự kiện nào của HandlerInterceptorAdapter sẽ thực hiện trước khi chuyển sang view?",
+            "ans": "postHandle()"
+        },
+        {
+            "ques": "Qui luật xác định view của ViewResolver được thực hiện như thế nào?",
+            "ans": "prefix + viewname + suffix"
+        },
+        {
+            "ques": "STS là một plugin cho eclipse nó cung cấp một số template hỗ trợ phát triển ứng dụng Spring Boot có các ưu điểm nào?\n1. Chuẩn tắc về mặt tổ chức dự án\n2. Giảm thời gian viết mã",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Schedule Task thường đảm nhận những công việc phía hậu trường nào?",
+            "ans": "Gửi email theo định kỳ"
+        },
+        {
+            "ques": "Schedule Task thường đảm nhận những công việc phía hậu trường nào?",
+            "ans": [
+                "Gửi email theo định kỳ",
+                "Sao lưu dữ liệu định kỳ",
+                "Vô hiệu hóa dữ liệu hết hiệu lực theo thời gian",
+                "Xóa dữ liệu rác"
+            ]
+        },
+        {
+            "ques": "Spring Tool Suite (STS) là gì?",
+            "ans": "Plugin của eclipse hỗ trợ phát triển dự án Spring Boot"
+        },
+        {
+            "ques": "Spring.jpa.hibernate.ddl-auto có những giá trị hợp lệ nào?",
+            "ans": [
+                "create-drop",
+                "update",
+                "validate"
+            ]
+        },
+        {
+            "ques": "Spring.jpa.hibernate.ddl-auto có những giá trị hợp lệ nào?",
+            "ans": [
+                "create",
+                "create-drop",
+                "none"
+            ]
+        },
+        {
+            "ques": "Spring.jpa.hibernate.ddl-auto có những giá trị hợp lệ nào?",
+            "ans": [
+                "create-drop",
+                "delete",
+                "none"
+            ]
+        },
+        {
+            "ques": "Spring.jpa.hibernate.ddl-auto=create\nKhai báo trên có ý nghĩa gì?",
+            "ans": "Xóa các bảng hiện có và tạo lại dựa trên các entity class"
+        },
+        {
+            "ques": "Spring.jpa.hibernate.ddl-auto=create-drop\nKhai báo trên có ý nghĩa gì?",
+            "ans": "Xóa CSDL hiện có, tạo lại CSDL đúng như các entity class, xóa CSDL khi shutdown ứng dụng"
+        },
+        {
+            "ques": "Spring.jpa.hibernate.ddl-auto=none\nKhai báo trên có ý nghĩa gì?",
+            "ans": "Không kiểm tra các ràng buộc trong entity với CSDL"
+        },
+        {
+            "ques": "Spring.jpa.hibernate.ddl-auto=update\nKhai báo trên có ý nghĩa gì?",
+            "ans": "Chỉ cập nhật lại thông số các cột và các bảng đúng như khai báo trong các entity class (không xóa cột, bảng thừa)"
+        },
+        {
+            "ques": "Spring.jpa.hibernate.ddl-auto=validate\nKhai báo trên có ý nghĩa gì?",
+            "ans": "Kiểm tra tính hợp lệ của CSDL so với ràng buộc trong các entity class"
+        },
+        {
+            "ques": "Sự kiện nào không được sử dụng để điều khiển trạng thái tải HTML template trong định tuyến của Angular?",
+            "ans": "$routeChangeComplete"
+        },
+        {
+            "ques": "Tham số thứ nhất của when() của dịch vụ $routeProvider có ý nghĩa gì?",
+            "ans": "Đường dẫn định tuyến"
+        },
+        {
+            "ques": "Theo nguyên tắc \"cấu hính mặc định\" các controller đặt trong package nào thì không cần phải cấu hình gì thêm?\n1. Đặt bất kỳ package nào, Spring Boot sẽ tự nhận ra\n2. Đặt trong package có tên bắt đầu với tên package chứa file cấu hình chính của ứng dụng",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Theo nguyên tắc \"cấu hính mặc định\" các controller đặt trong package nào thì không cần phải cấu hình gì thêm?\n1. Đặt bất kỳ package nào, Spring Boot sẽ tự nhận ra\n2. Đặt trong package có tên bắt đầu với tên package chứa file cấu hình chính của ứng dụng",
+            "ans": "1 sai , 2 đúng"
+        },
+        {
+            "ques": "Thuộc tính (attribute) nào của thẻ <form:form></form:form> dùng để buộc bean trong model với form?",
+            "ans": "modelAttribute"
+        },
+        {
+            "ques": "Thuộc tính nào của &lt;s:message&gt; cho phép truy xuất đến key của tài nguyên đa ngôn ngữ?",
+            "ans": "code"
+        },
+        {
+            "ques": "Thuộc tính nào của <form:errors/> định nghĩa thẻ bọc thông báo lỗi?",
+            "ans": "element"
+        },
+        {
+            "ques": "Thuộc tính nào của <form:form> chỉ ra bean được sử dụng để buộc dữ liệu lên các điều khiển trong form",
+            "ans": "modelAttribute"
+        },
+        {
+            "ques": "Thuộc tính nào của <form:input/> dùng để buộc thuộc tính của bean trong modelAttribute của form?",
+            "ans": "path"
+        },
+        {
+            "ques": "Thuộc tính nào của <form:select>, <form:radiobuttons> và <form:checkboxes> chỉ ra tập dữ liệu được đỗ vào các mục trong điều khiển",
+            "ans": "items"
+        },
+        {
+            "ques": "Thuộc tính nào của <s:message> cho phép truy xuất đến key của tài nguyên đa ngôn ngữ?",
+            "ans": "code"
+        },
+        {
+            "ques": "Thuộc tính nào của bean CookieLocaleResolver cho phép chọn ngôn ngữ mặc định?",
+            "ans": "defaultLocale"
+        },
+        {
+            "ques": "Thuộc tính nào của bean LocaleChangeInterceptor được sử dụng để chỉ ra tên tham số thay đổi ngôn ngữ?",
+            "ans": "paramName"
+        },
+        {
+            "ques": "Thuộc tính nào của tiles framework được sử dụng để đặt tên cho vùng body\n<tiles:insertAttribute _____=\"body\"/>",
+            "ans": "name"
+        },
+        {
+            "ques": "Thuộc tính nào của tiles framework được sử dụng để đặt tên cho vùng body <tiles:insertAttribute _",
+            "ans": "name"
+        },
+        {
+            "ques": "Thuộc tính nào của điều khiển trong form Spring chỉ ra class áp dụng cho điều khiển đó",
+            "ans": "cssClass"
+        },
+        {
+            "ques": "Thuộc tính nào của điều khiển trong form Spring chỉ ra tên thuộc tính của bean cần buộc dữ liệu",
+            "ans": "path"
+        },
+        {
+            "ques": "Thuộc tính nào là thuộc tính của thẻ <class>",
+            "ans": "table"
+        },
+        {
+            "ques": "Thuộc tính nào sau đây không phải của DriverManagerDataSource?",
+            "ans": "server"
+        },
+        {
+            "ques": "Thuộc tính nào trong tùy chọn định tuyến mà giá trị của nó là một đường dẫn định tuyến khác?",
+            "ans": "redirectTo"
+        },
+        {
+            "ques": "Thuộc tính templateUrl trong tùy chọn định tuyến có ý nghĩa gì?",
+            "ans": "Địa chỉ của trang HTML cần hiển thị lên ng-view"
+        },
+        {
+            "ques": "Thuộc tính trạng thái của điều khiển form nào cho biết dữ liệu nhập vào điều khiển đã hợp lệ?",
+            "ans": "$valid"
+        },
+        {
+            "ques": "Thuộc tính trạng thái của điều khiển form nào cho biết điều khiển chưa được tác động đến bởi người dùng?",
+            "ans": "$untouched"
+        },
+        {
+            "ques": "Thành phần nào sau đây không được thiết kế trong Spring Framework",
+            "ans": "Spring DataSet"
+        },
+        {
+            "ques": "Thông số nào chỉ ra JDBC Driver cần nạp vào để làm việc với hệ quản trị CSDL?",
+            "ans": "spring.datasource.driverClassName"
+        },
+        {
+            "ques": "Thông số nào phụ thuộc vào hệ quản trị CSDL?",
+            "ans": [
+                "spring.datasource.driverClassName",
+                "spring.jpa.hibernate.dialect"
+            ]
+        },
+        {
+            "ques": "Thẻ <form:checkboxes/> gồm những thuộc tính nào?",
+            "ans": [
+                "itemLabel",
+                "itemValue",
+                "items"
+            ]
+        },
+        {
+            "ques": "Thẻ <form:radiobutton/> gồm những thuộc tính nào?",
+            "ans": [
+                "label",
+                "path",
+                "value"
+            ]
+        },
+        {
+            "ques": "Thẻ <form:radiobuttons/> gồm những thuộc tính nào?",
+            "ans": [
+                "itemLabel",
+                "itemValue",
+                "items"
+            ]
+        },
+        {
+            "ques": "Thẻ nào trong file cấu hình được sử dụng để khai báo bộ lọc?",
+            "ans": "< filter>"
+        },
+        {
+            "ques": "Thứ tự thực hiện trong việc xử lý yêu cầu từ người sử dụng được DispatcherServlet điều phối\n1. Mapping Handler\n2. Controller\n3. View\n4. ViewResolver",
+            "ans": "1,2,4,3"
+        },
+        {
+            "ques": "Trong Spring Boot bạn có thể làm việc được với những đối tượng nào sau đây?",
+            "ans": [
+                "HttpServletRequest",
+                "HttpServletResponse",
+                "HttpSession",
+                "ServletContext"
+            ]
+        },
+        {
+            "ques": "Trong Spring Boot, đâu là những annotation được hỗ trợ để ánh xạ request với phương thức?",
+            "ans": [
+                "@DeleteMapping",
+                "@GetMapping",
+                "@PostMapping",
+                "@PutMapping"
+            ]
+        },
+        {
+            "ques": "Trong controller, với khai báo phương thức sau có ý nghĩa gì?\n'@ModelAttribute(\"faculties\")\npublic List<String> getFaculties(){\nreturn Arrays.asList(\"CNTT\", \"BIZ\", \"GRAPHIC\");\n}",
+            "ans": "Thêm attribute vào Model với tên là facculties và giá trị là kết quả trả về của phương thức"
+        },
+        {
+            "ques": "Trong controller, với khai báo phương thức sau có ý nghĩa gì?\n'@ModelAttribute(\"faculties\")\npublic List<String> getFaculties(){\nreturn Arrays.asList(\"CNTT\", \"BIZ\", \"GRAPHIC\");\n}",
+            "ans": "Ánh xạ phương thức với url là 'facculties'"
+        },
+        {
+            "ques": "Trong controller, với khai báo phương thức sau có ý nghĩa gì?\n'@ModelAttribute(\"faculties\")\npublic List<String> getFaculties(){\nreturn Arrays.asList(\"CNTT\", \"BIZ\", \"GRAPHIC\");\n}",
+            "ans": "Ánh xạ phương thức với mọi url"
+        },
+        {
+            "ques": "Trong dự án Spring Boot, các file giao diện web (jsp, images, css, js…) được đặt ở thư mục nào?",
+            "ans": "src/main/webapp"
+        },
+        {
+            "ques": "Trong dự án Spring Boot, file nào chứa khai báo các thư viện cần thiết",
+            "ans": "pom.xml"
+        },
+        {
+            "ques": "Trong dự án Spring Boot, lớp trong file cấu hình chính của ứng dụng cần được đính kèm với annotation nào?",
+            "ans": "@SpringBootApplication"
+        },
+        {
+            "ques": "Trong dự án web của eclipse, thư mục nào chứa các file ảnh, css, javascript",
+            "ans": "WebContent"
+        },
+        {
+            "ques": "Trong dự án web của eclipse, thư mục nào chứa file cấu hình ứng dụng web.xml",
+            "ans": "src"
+        },
+        {
+            "ques": "Trong dự án web của eclipse, thư mục nào chứa file thư viện",
+            "ans": "Thư mục nào cũng được"
+        },
+        {
+            "ques": "Trong file cấu hình ứng dụng web.xml tham số nào được sử dụng để khai báo các file cấu hình spring",
+            "ans": "webConfigLocation"
+        },
+        {
+            "ques": "Trong interface JpaRepository<T, ID> thì\n1. T là kiểu của Entity\n2. ID là kiểu của field @Id của Entity",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Trong interface JpaRepository<T, ID> thì 1. T là kiểu của Entity 2. ID là kiểu của field @Id c",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Trong mô hình MVC2 công việc chính của JSP là gì",
+            "ans": "Sinh giao diện phản hồi cho người dùng"
+        },
+        {
+            "ques": "Trong một action có đoạn mã\nList<String> list = new ArrayList<>();\nlist.add(\"Phương\");\nlist.add(\"Cường\");\nmodel.addAttribute(\"items\", list);\nTrong view muốn hiển thị tên Cường thì phải viết thế nào?",
+            "ans": "${items[1]}"
+        },
+        {
+            "ques": "Trong quy trình xử lý request và response, đâu là thành phần chạy và sản xuất giao diện để trả về cho client?",
+            "ans": "View Engine"
+        },
+        {
+            "ques": "Trong quy trình xử lý request và response, đâu là thành phần trung tâm điều phối mọi hoạt động?",
+            "ans": "Dispatcher Servlet"
+        },
+        {
+            "ques": "Trong web.xml để cấu hình ứng dụng chạy được với Spring MVC, cần phải khai báo\n1. DispatcherServlet\n2. CharacterEncodingFilter",
+            "ans": "Chỉ cần 1, không cần 2"
+        },
+        {
+            "ques": "Trước khi viết mã gửi email thông qua Gmail bạn phải làm những công việc nào?",
+            "ans": [
+                "Khai báo các thông số kết nối với Gmail SMPT",
+                "Khai báo thư viện cần thiết - pom.xml",
+                "Kích hoạt tài khoản gmail (nếu chưa) cho phép gửi mail qua ứng dụng"
+            ]
+        },
+        {
+            "ques": "Tên file chứa tài nguyên tiếng việt phải đặt như thế nào?",
+            "ans": "basename_vi.properties"
+        },
+        {
+            "ques": "Tích hợp Hibernate vào Spring nhờ vào thành phần nào của Spring Framework",
+            "ans": "Spring ORM"
+        },
+        {
+            "ques": "URL khẩn cầu phương thức action được ánh xạ với \"home/index\" là gì?",
+            "ans": "home/index.htm"
+        },
+        {
+            "ques": "Với @RequestMapping(\"/abc\") được hiểu là gì?",
+            "ans": "@RequestMapping(value=\"/abc\")"
+        },
+        {
+            "ques": "Với Spring Data JPA khi khai báo field có tên là firstName thì sẽ ánh xạ với cột có tên như thế nào?\n1. FirstName\n2. First_Name",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Với Spring Data JPA khi khai báo trong entity class là @Column(name=\"FirstName\") sẽ ánh xạ với cột có tên như thế nào?\n1. FirstName\n2. First_Name",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Với Spring Data JPA khi khai báo với entity class là @Table(name=\"UserRoles\") sẽ ánh xạ với bảng có tên như thế nào?\n1. UserRoles\n2. User_Roles",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Với Spring Data JPA, trong entity class khi khai báo thực thể kết hợp là @JoinColumn(name=\"UserId\") sẽ ánh xạ với cột khóa ngoại có tên như thế nào?\n1. UserId\n2. User_Id",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Với Spring Data JPA, trong entity class khi khai báo thực thể kết hợp là @JoinColumn(name=\"UserId\") sẽ ánh xạ với cột khóa ngoại có tên như thế nào?1. UserId2. User_Id",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Với Tiles Framework, trong file template jsp cần phải khai báo thư viện thẻ nào?",
+            "ans": "<%@ taglib uri=\"http://tiles.apache.org/tags-tiles\" prefix=\"tiles\" %>"
+        },
+        {
+            "ques": "Ánh xạ sau đây khi người dùng đưa ra request /a/b thì sẽ nhận được kết quả là gì?\n@RequestMapping(\"/a/b\")\npublic void test(){}",
+            "ans": "Trang web trống"
+        },
+        {
+            "ques": "Ánh xạ sau đây khi người dùng đưa ra request /a/b thì sẽ nhận được kết quả là gì?\n@RequestMapping(\"/a/b\")\npublic void test(){}",
+            "ans": "Kết quả chạy b.jsp trong thư mục a"
+        },
+        {
+            "ques": "Ánh xạ sau đây khi người dùng đưa ra request /a/b thì sẽ nhận được kết quả là gì?\n@ResponseBody\n@RequestMapping(\"/a/b\")\npublic List<String> test(){\nreturn Arrays.asList(\"Phèo\", \"Nở\");\n}",
+            "ans": "[\"Phèo\", \"Nở\"]"
+        },
+        {
+            "ques": "Ánh xạ sau đây khi người dùng đưa ra request /a/b thì sẽ nhận được kết quả là gì?\n@ResponseBody\n@RequestMapping(\"/a/b\")\npublic List<String> test(){\nreturn Arrays.asList(\"Phèo\", \"Nở\");\n}",
+            "ans": "Kết quả chạy b.jsp trong thư mục a"
+        },
+        {
+            "ques": "Điền vào chỗ trống để hoàn thiện cấu hình java duy trì ngôn ngữ được chọn\n@Bean(\"localeResolver\")\npublic LocaleResolver getLocaleResolver() {\nCookieLocaleResolver resolver = new CookieLocaleResolver();\nresolver.setDefaultLocale(_____);\nresolver.setCookieMaxAge(10*24*60*60); // 10 ngày\nresolver.setCookiePath(\"/\");\nreturn resolver;\n}",
+            "ans": "new Locale(\"vi\")"
+        },
+        {
+            "ques": "Điền vào chỗ trống để hoàn thiện khai báo thư viện cần thiết cho Tiles Framework\n<dependency>\n<groupId>_____</groupId>\n<artifactId>tiles-jsp</artifactId>\n<version>3.0.8</version>\n</dependency>",
+            "ans": "org.apache.tiles"
+        },
+        {
+            "ques": "Điền vào chỗ trống để hoàn thiện khai báo thư viện cần thiết cho Tiles Framework\n<dependency>\n<groupId>org.apache.tiles</groupId>\n<artifactId>_____</artifactId>\n<version>3.0.8</version>\n</dependency>",
+            "ans": "tiles-api"
+        },
+        {
+            "ques": "Điền vào chỗ trống để hoàn thiện khai báo thư viện cần thiết cho Tiles Framework\n<dependency>\n<groupId>org.apache.tiles</groupId>\n<artifactId>_____</artifactId>\n<version>3.0.8</version>\n</dependency>",
+            "ans": "tiles-jsp"
+        },
+        {
+            "ques": "Điền vào chỗ trống để hoàn thiện khai báo thư viện cần thiết cho Tiles Framework\n<dependency>\n<groupId>org.apache.tiles</groupId>\n<artifactId>_____</artifactId>\n<version>3.0.8</version>\n</dependency>",
+            "ans": "tiles-framework"
+        },
+        {
+            "ques": "Điền vào chỗ trống để hoàn thiện mã cấu hình Tiles Configurer\n@Bean(\"tilesConfigurer\")\npublic TilesConfigurer getTilesConfigurer() {\nTilesConfigurer tilesConfigurer = new TilesConfigurer();\ntilesConfigurer.setDefinitions(\"/views/layout/_____\");\nreturn tilesConfigurer;\n}",
+            "ans": "tiles.xml"
+        },
+        {
+            "ques": "Điền vào chỗ trống để hoàn thiện mã cấu hình View Resolver cho Tiles Framework\n@Bean(\"viewResolver\")\npublic ViewResolver getViewResolver() {\nUrlBasedViewResolver viewResolver = new UrlBasedViewResolver();\nviewResolver.setViewClass(_____);\nreturn viewResolver;\n}",
+            "ans": "TilesView.class"
+        },
+        {
+            "ques": "Điền vào chỗ trống để hoàn thiện việc đăng ký interceptor xử lý sự thay đổi ngôn ngữ thông qua tham số có tên là \"lang\" chỉ khi request với url là \"/home/index\"\n@Override\npublic void addInterceptors(InterceptorRegistry registry) {\nLocaleChangeInterceptor locale = new LocaleChangeInterceptor();\nlocale.setParamName(\"_____\");\nregistry.addInterceptor(locale).addPathPatterns(\"_____\");\n}",
+            "ans": "lang, /home/index"
+        },
+        {
+            "ques": "Điền vào các chỗ trống tên các thuộc tính của thẻ &lt;put-attribute&gt; để cung cấp nội dung cho vùng header trong file index.jsp\n&lt;definition name=\"layout\" template=\"/views/layout/index.jsp\"&gt;\n&lt;put-attribute _____=\"header\" _____=\"/views/layout/_header.jsp\" /&gt;\n...\n&lt;/definition&gt;",
+            "ans": "name, value"
+        },
+        {
+            "ques": "Điền vào các chỗ trống tên các thuộc tính của thẻ <definition>\n<definition _____=\"layout\" _____=\"/views/layout/index.jsp\">\n...\n</definition>",
+            "ans": "name, template"
+        },
+        {
+            "ques": "Điền vào các chỗ trống tên các thuộc tính của thẻ <put-attribute> để cung cấp nội dung cho vùng header trong file index.jsp\n<definition name=\"layout\" template=\"/views/layout/index.jsp\">\n<put-attribute _____=\"header\" _____=\"/views/layout/_header.jsp\" />\n...\n</definition>",
+            "ans": "name, value"
+        },
+        {
+            "ques": "Điền vào các chỗ trống để <definition> thứ 2 thừa kế từ <definition> thứ nhất\n<definition name=\"layout\" template=\"/views/layout/index.jsp\">\n<put-attribute name=\"header\" value=\"/views/layout/_header.jsp\" />\n<put-attribute name=\"body\" value=\"\" />\n<put-attribute name=\"footer\" value=\"/views/layout/_footer.jsp\" />\n</definition>\n<definition name=\"*/*\" extends=\"_____\">\n<put-attribute name=\"body\" value=\"/views/{1}/{2}.jsp\" />\n</definition>",
+            "ans": "layout"
+        },
+        {
+            "ques": "Điền vào các chỗ trống để <definition> thứ 2 thừa kế từ <definition> thứ nhất<definition name=\"layout\" template=\"/views/layout/index.jsp\"> <put-attribute name=\"header\" value=\"/views/layout/_header.jsp\" /> <put-attribute name=\"body\" value=\"\" /> <put-attribute name=\"footer\" value=\"/views/layout/_footer.jsp\" /></definition><definition name=\"*/*\" extends=\"_____\"> <put-attribute name=\"body\" value=\"/views/{1}/{2}.jsp\" /></definition>",
+            "ans": "layout"
+        },
+        {
+            "ques": "Điền đường dẫn hợp lệ vào chỗ trống\n<definition name=\"_____\" extends=\"parent\">\n<put-attribute name=\"body\" value=\"/views/{1}/{2}.jsp\" />\n</definition>",
+            "ans": [
+                "*/*",
+                "user/*/*"
+            ]
+        },
+        {
+            "ques": "Điều khiển nào sẽ sinh ra <input type=\"text\">",
+            "ans": "<form:input></form:input>"
+        },
+        {
+            "ques": "Điều khiển nào sẽ sinh ra <input type=\"text\">",
+            "ans": "<form:checkbox></form:checkbox>"
+        },
+        {
+            "ques": "Điều khiển nào sẽ sinh ra combo box",
+            "ans": "< form:select/>"
+        },
+        {
+            "ques": "Đâu là annotation khai báo với lớp báo cho hệ thống biết để nạp vào Spring Beans?",
+            "ans": [
+                "@Component",
+                "@Repository",
+                "@Service"
+            ]
+        },
+        {
+            "ques": "Đâu là annotation khai báo với lớp báo cho hệ thống biết để nạp vào Spring Beans?",
+            "ans": [
+                "@Bean",
+                "@Component",
+                "@Repository",
+                "@Service"
+            ]
+        },
+        {
+            "ques": "Đâu là annotation quy định scope của Spring Bean?",
+            "ans": [
+                "@ApplicationScope",
+                "@RequestScope",
+                "@SessionScope"
+            ]
+        },
+        {
+            "ques": "Đâu là annotation quy định scope của Spring Bean?",
+            "ans": [
+                "@ApplicationScope",
+                "@PageScope",
+                "@RequestScope",
+                "@SessionScope"
+            ]
+        },
+        {
+            "ques": "Đâu là annotation được sử dụng để đọc giá trị của biến đường dẫn trên url?",
+            "ans": "@PathVariable"
+        },
+        {
+            "ques": "Đâu là annotation được sử dụng để đọc giá trị của cookie?",
+            "ans": "@CookieValue"
+        },
+        {
+            "ques": "Đâu là annotation được sử dụng để đọc giá trị tham số (parametter) gửi từ người sử dụng?",
+            "ans": "@RequestParam"
+        },
+        {
+            "ques": "Đâu là các Spring Bean dựng sẵn (built-in)?",
+            "ans": [
+                "HttpServletRequest",
+                "HttpServletResponse",
+                "HttpSession",
+                "ServletContext"
+            ]
+        },
+        {
+            "ques": "Đâu là các annotation kiểm lỗi số?",
+            "ans": [
+                "@Min()",
+                "@Size()"
+            ]
+        },
+        {
+            "ques": "Đâu là các annotation kiểm lỗi thời gian?",
+            "ans": [
+                "@Past()",
+                "@PastOrPresent()"
+            ]
+        },
+        {
+            "ques": "Đâu là các phương thức được khai báo trong CrudRepository?",
+            "ans": [
+                "Iterable<T> findAll()",
+                "Long count()",
+                "boolean exists(ID id)"
+            ]
+        },
+        {
+            "ques": "Đâu là các phương thức được khai báo trong CrudRepository?",
+            "ans": [
+                "<S extends T> S save(S entity)",
+                "Optional<T> findById(ID id)",
+                "T getOne(ID id)",
+                "void delete(T entity)"
+            ]
+        },
+        {
+            "ques": "Đâu là các phương thức được khai báo trong CrudRepository?",
+            "ans": [
+                "Page<T> findAll(Pageable pageable)",
+                "boolean exists(ID id)"
+            ]
+        },
+        {
+            "ques": "Đâu là các phương thức được khai báo trong JpaRepository?",
+            "ans": [
+                "T saveAndFlush(T entity)",
+                "void deleteInBatch(Iterable<T> entities)",
+                "void flush()"
+            ]
+        },
+        {
+            "ques": "Đâu là các phương thức được khai báo trong JpaRepository?",
+            "ans": [
+                "List<T> findAll()",
+                "List<T> findAll(Sort sort)",
+                "List<T> save(Iterable<? extends T> entities)"
+            ]
+        },
+        {
+            "ques": "Đâu là các phương thức được khai báo trong PagingAndSortingRepository?",
+            "ans": "Iterable<T> findAll(Sort sort)"
+        },
+        {
+            "ques": "Đâu là các phương thức được khai báo trong PagingAndSortingRepository?",
+            "ans": [
+                "Iterable<T> findAll(Sort sort)",
+                "Page<T> findAll(Pageable pageable)"
+            ]
+        },
+        {
+            "ques": "Đâu là các thuộc tính chung của các thẻ <form:checkboxes/>, <form:radiobuttons/>, <form:select/> và <form:options/> ?",
+            "ans": [
+                "items"
+            ]
+        },
+        {
+            "ques": "Đâu là các thuộc tính chung của các thẻ <form:checkboxes/>, <form:radiobuttons/>, <form:select/> và <form:options/> ?",
+            "ans": [
+                "itemLabel",
+                "itemValue",
+                "items"
+            ]
+        },
+        {
+            "ques": "Đâu là các thuộc tính cung cấp nguồn dữ liệu tạo ra các mục từ các điều khiển <form:checkboxes/>, <form:radiobuttons/>, <form:select/> và <form:options/> ?",
+            "ans": "items"
+        },
+        {
+            "ques": "Đâu là các thuộc tính của thẻ <form:errors/>?",
+            "ans": [
+                "delimeter",
+                "element",
+                "label",
+                "path"
+            ]
+        },
+        {
+            "ques": "Đâu là các thuộc tính của thẻ <form:errors/>?",
+            "ans": [
+                "delimeter",
+                "label",
+                "path"
+            ]
+        },
+        {
+            "ques": "Đâu là các thuộc tính của thẻ <form:errors/>?",
+            "ans": [
+                "delimeter",
+                "element",
+                "path"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:form>",
+                "<form:input/>",
+                "<form:textarea/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:checkbox/>",
+                "<form:hidden/>",
+                "<form:radiobutton/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:button/>",
+                "<form:password/>",
+                "<form:select/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:button/>",
+                "<form:label/>",
+                "<form:password/>",
+                "<form:select/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:checkboxes/>",
+                "<form:radiobuttons/>",
+                "<form:select/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:checkboxes/>",
+                "<form:listbox/>",
+                "<form:radiobuttons/>",
+                "<form:select/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:checkbox/>",
+                "<form:hidden/>",
+                "<form:radio/>",
+                "<form:radiobutton/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:file/>",
+                "<form:form>",
+                "<form:input/>",
+                "<form:textarea/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:checkbox/>",
+                "<form:radio/>",
+                "<form:radiobutton/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các thẻ của Spring form?",
+            "ans": [
+                "<form:radio/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các điều khiển của Spring Form?",
+            "ans": [
+                "<form:checkbox/>",
+                "<form:file/>",
+                "<form:input/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các điều khiển của Spring Form?",
+            "ans": [
+                "<form:checkbox/>",
+                "<form:input/>"
+            ]
+        },
+        {
+            "ques": "Đâu là các đối số của @PathVariable()?",
+            "ans": [
+                "name",
+                "value"
+            ]
+        },
+        {
+            "ques": "Đâu là các đối số của @RequestParam()?",
+            "ans": [
+                "defaultValue",
+                "name",
+                "value"
+            ]
+        },
+        {
+            "ques": "Đâu là cách đưa dữ liệu vào Model để chia sẻ với view?",
+            "ans": [
+                "@ModelAttribute(name) Type method(){…return value;}",
+                "MappingMethod(@ModelAttribute(name) Type value)",
+                "Model.addAttribute(name, value)"
+            ]
+        },
+        {
+            "ques": "Đâu là cách đưa dữ liệu vào Model để chia sẻ với view?",
+            "ans": [
+                "@ModelAttribute(name) Type method(){…return value;}",
+                "MappingMethod(@ModelAttribute(name) Type value)",
+                "Model.addAttribute(name, value)",
+                "Model.setAttribute(name, value)"
+            ]
+        },
+        {
+            "ques": "Đâu là cú pháp đúng khi sử dụng PageRequest để tạo Pageable?",
+            "ans": [
+                "PageRequest.of(int page, int size)",
+                "PageRequest.of(int page, int size, Direction direction, String...properties)",
+                "PageRequest.of(int page, int size, Sort sort)"
+            ]
+        },
+        {
+            "ques": "Đâu là cú pháp đúng khi tạo một DAO\n1. public class MyDAO extends JpaRepository<T, ID>{}\n2. public interface MyDAO extends JpaRepository<T, ID>{}",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Đâu là cú pháp đúng khi tạo một DAO 1. public class MyDAO extends JpaRepository<T, ID>{} 2. pu",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Đâu là cú pháp đúng khi tạo một DAO1. public class MyDAO extends JpaRepository<T, ID>{}2. public interface MyDAO extends JpaRepository<T, ID>{}",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Đâu là khai báo phương thức truy vấn đùng cú pháp DSL?",
+            "ans": [
+                "Page<Product> findAllByNameLike(String name, Pageable pageable);",
+                "Page<Product> findByNameLike(String name, Pageable pageable);"
+            ]
+        },
+        {
+            "ques": "Đâu là khai báo phương thức truy vấn đùng cú pháp DSL?",
+            "ans": [
+                "List<Product> findAllByNameLike(String name, Sort sort);",
+                "List<Product> findByNameLike(String name, Sort sort);"
+            ]
+        },
+        {
+            "ques": "Đâu là kết quả sinh mã HTML của thẻ <form:form action=\"x\"></form:form>?",
+            "ans": "<form action=\"x\" method=\"post\"></form>"
+        },
+        {
+            "ques": "Đâu là lệnh hợp lệ tại vị trí ? Của đoạn mã sau đây?\n@RequestMapping(\"/a/b\")\npublic String test(){\nreturn ?;\n}",
+            "ans": [
+                "\"forward:/home/index\"",
+                "\"redirect:/home/index\"",
+                "\"view\""
+            ]
+        },
+        {
+            "ques": "Đâu là lệnh hợp lệ tại vị trí ? Của đoạn mã sau đây?\n@RequestMapping(\"/a/b\")\npublic String test(){\nreturn ?;\n}",
+            "ans": [
+                "\"forward:/home/index\"",
+                "\"redirect:/home/index\"",
+                "\"view\"",
+                "null"
+            ]
+        },
+        {
+            "ques": "Đâu là phương thức của HandlerInterceptor?",
+            "ans": [
+                "afterCompletion()",
+                "postHandle()",
+                "preHandle()"
+            ]
+        },
+        {
+            "ques": "Đâu là thành phần có thể sử dụng để chia sẻ dữ liệu giữa controller và view?",
+            "ans": [
+                "HttpServletRequest",
+                "Model",
+                "ServletContext"
+            ]
+        },
+        {
+            "ques": "Đâu là thành phần có thể sử dụng để chia sẻ dữ liệu giữa controller và view?",
+            "ans": [
+                "HttpServletRequest",
+                "HttpSession",
+                "Model",
+                "ServletContext"
+            ]
+        },
+        {
+            "ques": "Đâu là thẻ hiển thị tất cả các lỗi khi validate?",
+            "ans": "<form:errors path=\"*\"/>"
+        },
+        {
+            "ques": "Đâu là url gọi được phương thức được ánh xạ với annotation @RequestMapping(value=\"u\", params=\"a\")?",
+            "ans": "/u?a"
+        },
+        {
+            "ques": "Đâu là ánh xạ request tương đương với ánh xạ @GetMapping(url)?",
+            "ans": "@RequestMapping(value=url, method=RequestMethod.GET)"
+        },
+        {
+            "ques": "Đâu là định dạng đúng của key trong file tài nguyên thông báo lỗi ?",
+            "ans": "<annotation>.<bean>.<property>"
+        },
+        {
+            "ques": "Đâu là định dạng đúng của key trong file tài nguyên thông báo lỗi ?",
+            "ans": "<property>.<bean>.<annotation>"
+        },
+        {
+            "ques": "Đâu là ưu điểm của form Spring\n1. Cung cấp cơ chế buộc dữ liệu lên các điều khiển\n2. Khi thay đổi dữ liệu trong bean thì dữ liệu trên các điều khiển cũng thay đổi theo.",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Đâu là ưu điểm của form Spring\n1. Cấp dữ liệu vào các List Control trở nên rất đơn giản\n2. Kiểm và hiển thị lỗi một cách dễ dàng",
+            "ans": "Cả 2 phát biểu cùng đúng"
+        },
+        {
+            "ques": "Để có thể làm việc được với CSDL SQL Server, bạn cần phải khai báo thư viện cần thiết nào?\n1. Spring Data JPA\n<dependency>\n<groupId>org.springframework.boot</groupId>\n<artifactId>spring-boot-starter-data-jpa</artifactId>\n</dependency>\n2. SQL Server Driver\n<dependency>\n<groupId>com.microsoft.sqlserver</groupId>\n<artifactId>mssql-jdbc</artifactId>\n<scope>runtime</scope>\n</dependency>",
+            "ans": "Cả 2"
+        },
+        {
+            "ques": "Để có thể làm việc được với CSDL SQL Server, bạn cần phải khai báo thư viện cần thiết nào? 1. Sprin.",
+            "ans": "Cả 2"
+        },
+        {
+            "ques": "Để có thể sử dụng kỹ thuật định tuyến trong Angular bạn cần phải viết đoạn mã lệnh nào?\n1. var app = angular.module(\"myApp\", [\"ngRoute\"])\n2. app.config(function ($routeProvider){…})",
+            "ans": "Cần cả 2 đoạn mã"
+        },
+        {
+            "ques": "Để duy trì ngôn ngữ được chọn trên cookie trong khoảng thời gian nào đó bạn cần thiết lập giá trị cho thuộc tính nào của bean CookieLocaleResolver",
+            "ans": "cookieMaxAge"
+        },
+        {
+            "ques": "Để dựng layout với Tiles Framework bạn cần thực hiện các công việc nào?",
+            "ans": [
+                "Cấu hình View Resolver và Tiles Configurer",
+                "Khai báo thư viện cần thiết",
+                "Tổ chức layout với tiles.xml"
+            ]
+        },
+        {
+            "ques": "Để dựng layout với Tiles Framework bạn cần thực hiện các công việc nào?",
+            "ans": [
+                "Cấu hình View Resolver và Tiles Configurer",
+                "Gửi email",
+                "Khai báo thư viện cần thiết",
+                "Tổ chức layout với tiles.xml"
+            ]
+        },
+        {
+            "ques": "Để hiển thị một attribute đã được đặt vào HttpServletRequest bởi action trong jsp người ta sử dụng cách nào?\n1. <%=request.getAttribute(name)%>\n2. ${name}",
+            "ans": "Cả 2 cách đều đúng"
+        },
+        {
+            "ques": "Để kiểm lỗi tự động các thuộc tính bean bạn cần sử dụng các thư viện nào?\n1. validation-api-1.0.0.GA.jar\n2. hibernate-validator-4.2.0.Final.jar\n3. log4j-1.2.16.jar\n4. slf4j-api-1.7.5.jar\n5. slf4j-log4j12-1.7.5.jar\n6. slf4j-simple-1.6.1.jar",
+            "ans": "Cả 6 thư viện"
+        },
+        {
+            "ques": "Để làm việc với tham số định tuyến bạn cần thực hiện các công việc nào?\n1. Sử dụng dấu : và đặt tên tham số trong đường dẫn định tuyến\n2. Sử dụng dịch vụ $routeParams để làm việc với các tham số",
+            "ans": "Cần cả 2 công việc"
+        },
+        {
+            "ques": "Để làm việc với tham số định tuyến bạn cần thực hiện các công việc nào?\n1. Sử dụng dấu : và đặt tên tham số trong đường dẫn định tuyến\n2. Sử dụng dịch vụ $routeParams để làm việc với các tham số",
+            "ans": "Cần công việc 2, không cần công việc 1"
+        },
+        {
+            "ques": "Để nhận giá trị của cookie fullname, bạn sử dụng dòng lệnh nào sau đây\n1. @CookieValue(\"fullname\")\n2. @CookieValue(value=\"fullname\")",
+            "ans": "Cả 2 đều đúng"
+        },
+        {
+            "ques": "Để nhận giá trị của phần đường dẫn url {fullname}, bạn sử dụng dòng lệnh nào sau đây\n1. @PathVariable(\"fullname\")\n2. @PathVariable(value=\"fullname\")",
+            "ans": "Cả 2 đều đúng"
+        },
+        {
+            "ques": "Để nhận giá trị của tham số có tên là fullname, bạn sử dụng dòng lệnh nào sau đây\n1. @RequestParam(\"fullname\")\n2. @RequestParam(value=\"fullname\")",
+            "ans": "Cả 2 đều được"
+        },
+        {
+            "ques": "Để nhận tham số từ người dùng bạn cần bổ sung vào đối số của phương thức action những gì?\n1. HttpServletRequest\n2. HttpServletResponse",
+            "ans": "Chỉ cần 1, không cần 2"
+        },
+        {
+            "ques": "Để sử dụng JSP trong dự án Spring Boot bạn cần phải khai báo thêm những việc tối thiểu nào sau khi dự án được tạo ra?",
+            "ans": [
+                "spring.mvc.view.prefix trong application.properties",
+                "spring.mvc.view.suffix trong application.properties",
+                "tomcat-embed-jasper trong application.properties"
+            ]
+        },
+        {
+            "ques": "Để sử dụng JSP trong dự án Spring Boot bạn cần phải khai báo thêm những việc tối thiểu nào sau khi dự án được tạo ra?",
+            "ans": [
+                "spring.mvc.view.prefix trong application.properties",
+                "spring.mvc.view.suffix trong application.properties",
+                "tomcat-embed-jasper trong pom.xml"
+            ]
+        },
+        {
+            "ques": "Để sử dụng JSP trong dự án Spring Boot bạn cần phải khai báo thêm những việc tối thiểu nào sau khi dự án được tạo ra?",
+            "ans": [
+                "spring.mvc.view.prefix trong application.properties",
+                "spring.mvc.view.suffix trong application.properties",
+                "tomcat-embed-jasper trong application.properties",
+                "tomcat-embed-jasper trong pom.xml"
+            ]
+        },
+        {
+            "ques": "Để sử dụng Schedule Task, bạn cần phải sử dụng những annotation nào?",
+            "ans": [
+                "@EnableScheduling",
+                "@Scheduled"
+            ]
+        },
+        {
+            "ques": "Để sử dụng gmail làm smtp server trước hết bạn phải cần thực hiện công việc nào ?\n1. Đăng ký tài khoản gmail\n2. Kích hoạt tài khoản cho phép phát mail thông qua google",
+            "ans": "Cần cả 2"
+        },
+        {
+            "ques": "Để sử dụng lớp Java để nhận tham số thì lớp Java phải thỏa mãn điều kiện gì?",
+            "ans": [
+                "Các thuộc tính (phần tên sau get_ và set_) phải cùng tên với các tham số",
+                "Lớp phải có constructor mặc định (không tham số)",
+                "Lớp phải có các getters và setters",
+                "Lớp phải được khai báo là public"
+            ]
+        },
+        {
+            "ques": "Để sử dụng được Lombok trong eclipse bạn cần phải làm những gì?\n1. Cài đặt Lombok cho eclipse\n2. Khai báo thư viện cần thiết vào pom.xml",
+            "ans": "1 đúng, 2 đúng"
+        },
+        {
+            "ques": "Để thay đổi giá trị của tham số định tuyến, bạn cần gọi phương thức gì của dịch vụ $routeParams?",
+            "ans": "update()"
+        },
+        {
+            "ques": "Để truy xuất đến ServletContext của ứng dụng web bạn phải làm thế nào?\n1. Khai báo @Autowired ServletContext\n2. Khai báo ServletContext như đối số của phương thức action",
+            "ans": "Cả 2 đều sai"
+        },
+        {
+            "ques": "Để truy xuất đến ServletContext của ứng dụng web bạn phải làm thế nào?\n1. Khai báo @Autowired ServletContext\n2. Khai báo ServletContext như đối số của phương thức action",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Để tránh sự phụ thuộc vào mã nguồn khi tiêm Spring Bean vào component người ta làm thế nào?\n1. Tiêm vào biến có kiểu là interface\n2. Tiêm váo biến có kiểu là class",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Để tổ chức được giao diện đa ngôn ngữ trong Spring Boot, bạn cần phải thực hiện những công việc nào?",
+            "ans": [
+                "Cấu hình nạp tài nguyên đa ngôn ngữ vào hệ thống",
+                "Hiển thị dữ liệu từ tài nguyên đa ngôn ngữ lên giao diện",
+                "Tổ chức tài nguyên đa ngôn ngữ"
+            ]
+        },
+        {
+            "ques": "Để tổ chức được giao diện đa ngôn ngữ trong Spring Boot, bạn cần phải thực hiện những công việc nào?",
+            "ans": [
+                "Cấu hình interceptor xử lý thay đổi ngôn ngữ",
+                "Cấu hình phương pháp duy trì ngôn ngữ được chọn",
+                "Lập trình lựa chọn ngôn ngữ"
+            ]
+        },
+        {
+            "ques": "Để tổ chức được giao diện đa ngôn ngữ trong Spring Boot, bạn cần phải thực hiện những công việc nào?",
+            "ans": [
+                "Cấu hình interceptor xử lý thay đổi ngôn ngữ",
+                "Cấu hình phương pháp duy trì ngôn ngữ được chọn",
+                "Lập trình lựa chọn ngôn ngữ",
+                "Thiết kế giao diện Spring Form"
+            ]
+        },
+        {
+            "ques": "Để upload được file thì <form:form></form:form> cần những thuộc tính nào?",
+            "ans": [
+                "enctype=\"mutipart/form-data\"",
+                "method=\"post\""
+            ]
+        },
+        {
+            "ques": "Để ánh xạ request có url là \"abc\" và phương thức \"GET\" thì ta viết theo cách nào?\n1. @RequestMapping(\"/abc\", RequestMethod.GET)\n2. @RequestMapping(value=\"/abc\", method=RequestMethod.GET)",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Để ánh xạ request có url là \"abc\" và phương thức \"GET\" thì ta viết theo cách nào?1. @RequestMapping(\"/abc\", RequestMethod.GET)2. @RequestMapping(value=\"/abc\", method=RequestMethod.GET)",
+            "ans": "1 sai, 2 đúng"
+        },
+        {
+            "ques": "Để điều khiển trạng thái tải các HTML template trong định tuyến người ta sử dụng cấu trúc mã:\napp.run(function ($rootScope) {\n$rootScope.$on(\"sự kiện\", function () { });\n});\nHãy cho biết sự kiện nào xảy ra sau khi HTML template được tải về thành công?",
+            "ans": "$routeChangeStart"
+        },
+        {
+            "ques": "Để điều khiển trạng thái tải các HTML template trong định tuyến người ta sử dụng cấu trúc mã:\napp.run(function ($rootScope) {\n$rootScope.$on(\"sự kiện\", function () { });\n});\nHãy cho biết sự kiện nào xảy ra sau khi HTML template được tải về thành công?",
+            "ans": "$routeChangeSuccess"
+        },
+        {
+            "ques": "Để định nghĩa trạng thái cho các thẻ input chưa hợp lệ thì bạn cần phải định nghĩa css cho selector nào?",
+            "ans": "input.ng-invalid"
+        },
+        {
+            "ques": "Đối số nào của @CookieValue chỉ ra tên của cookie muốn nhận giá trị",
+            "ans": "value"
+        },
+        {
+            "ques": "Đối số nào của @PathVariable chỉ ra tên một phần đường dẫn của url muốn nhận giá trị",
+            "ans": "value"
+        },
+        {
+            "ques": "Đối số nào của @RequestParam chỉ ra tên tham số muốn nhận giá trị",
+            "ans": "value"
+        },
+        {
+            "ques": "Đối số thứ 2 của phương thức setBody(text, true) của MimeMessageHelper có ý nghĩa gì?\n1. Chỉ ra nội dụng mail là mã HTML\n2. Chỉ ra nội dung mail là unicode",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Đối số thứ nhất của phương thức rejectValue(a,b,c) của BindingResult có ý nghĩa gì?",
+            "ans": "Tên thuộc tính của bean trong model"
+        },
+        {
+            "ques": "Đổi trường khóa ngoại bằng ánh xạ thực thể kết hợp, bạn sử dụng annotation nào?",
+            "ans": "@ManyToOne + @JoinColumn"
+        },
+        {
+            "ques": "Ưu điểm của @RequestParam() so với HttpServletRequest.getParameter() là gì?\n1. Chuyển kiểu tự động\n2. Giá trị mặc định",
+            "ans": "1 đúng, 2 sai"
+        },
+        {
+            "ques": "Ưu điểm của @RequestParam() so với HttpServletRequest.getParameter() là gì?\n1. Chuyển kiểu tự động\n2. Giá trị mặc định",
+            "ans": "1 đúng, 2 đúng"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body class="container">
+<h1 class="text-center">Account</h1>
+<form th:action="@{/add/account}"
+      th:object="${account}" method="POST">
+
+    <div class="mb-3">
+        <label class="form-label">User name</label>
+        <input type="text" th:field="*{username}" class="form-control">
+        <span  class="text-danger" th:text="${message}"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="text" th:field="*{password}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Fullname</label>
+        <input type="text" th:field="*{fullname}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="text" th:field="*{email}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Photo</label>
+        <input type="text" th:field="*{photo}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Activated:</label>
+        <input type="radio" th:field="*{activated}" th:value="Yes">Yes</input>
+        <input type="radio" th:field="*{activated}" th:value="No">No</input>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Admin:</label>
+        <input type="radio" th:field="*{admin}" th:value="Yes">Yes</input>
+        <input type="radio" th:field="*{admin}" th:value="No">No</input>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<hr>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">User name</th>
+        <th scope="col">Password</th>
+        <th scope="col">Full name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Photo</th>
+        <th scope="col">Activated</th>
+        <th scope="col">Admin</th>
+        <th scope="col">Action</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr th:each="theAccount:${accounts}">
+        <td th:text="${theAccount.username}"></td>
+        <td th:text="${theAccount.password}"></td>
+        <td th:text="${theAccount.fullname}"></td>
+        <td th:text="${theAccount.email}"></td>
+        <td th:text="${theAccount.photo}"></td>
+        <td th:text="${theAccount.activated ?'Yes':'No'}"></td>
+        <td th:text="${theAccount.admin?'Yes':'No'}"></td>
+        <td>
+            <a class="btn btn-primary" th:href="@{/detail/account(id=${theAccount.username})}">Update </a>
+            <a class="btn btn-primary" onclick=" return confirm('You want to delete')" th:href="@{/delete/account(id=${theAccount.username})}">Delete </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

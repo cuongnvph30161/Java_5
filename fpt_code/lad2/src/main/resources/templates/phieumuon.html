@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="container">
+<h1>Thêm phiếu mượn</h1>
+<form th:action="@{/save-phieu}"
+      th:object="${phieuMuon}" method="POST">
+
+    <div class="mb-3">
+        <label class="form-label">Tên:</label>
+        <select th:field="*{khachHang.ten}" class="form-control">
+            <option th:each="nameKH : ${listNameKhachHang}" th:value="${nameKH.ten}"
+                    th:text="${nameKH.ten}"></option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Địa chỉ </label>
+        <input type="date" th:field="*{khachHang.diaChi}"
+               class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Số điện thoại</label>
+        <input type="text" th:field="*{khachHang.soDienThoai}" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Ngày mượn</label>
+        <input type="date" th:field="*{ngayMuon}" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<hr>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Mã Phiếu Mượn</th>
+        <th scope="col">Tên</th>
+        <th scope="col">Địa Chỉ</th>
+        <th scope="col">Số điện thoại</th>
+        <th scope="col">Ngày mượn</th>
+        <th scope="col">Action</th>
+
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr th:each="pm:${phieumuons}">
+        <td th:text="${pm.maPhieuMuon}"></td>
+        <td th:text="${pm.khachHang.ten}"></td>
+        <td th:text="${pm.khachHang.diaChi}"></td>
+        <td th:text="${pm.khachHang.soDienThoai}"></td>
+        <td th:text="${pm.ngayMuon}"></td>
+        <td>
+            <a class="btn btn-primary" >Detail </a>
+            <a class="btn btn-primary" th:href="@{/delete-phieu(id=${pm.maPhieuMuon})}">Delete </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
